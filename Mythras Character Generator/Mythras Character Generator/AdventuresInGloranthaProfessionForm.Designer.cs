@@ -42,7 +42,7 @@
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.professionInfoBox = new System.Windows.Forms.GroupBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.civilisedCulturesLayout = new System.Windows.Forms.FlowLayoutPanel();
             this.radioButton14 = new System.Windows.Forms.RadioButton();
             this.radioButton13 = new System.Windows.Forms.RadioButton();
             this.radioButton12 = new System.Windows.Forms.RadioButton();
@@ -53,17 +53,17 @@
             this.radioButton7 = new System.Windows.Forms.RadioButton();
             this.radioButton6 = new System.Windows.Forms.RadioButton();
             this.radioButton5 = new System.Windows.Forms.RadioButton();
-            this.radioButton4 = new System.Windows.Forms.RadioButton();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.praxButton = new System.Windows.Forms.RadioButton();
+            this.pavisButton = new System.Windows.Forms.RadioButton();
+            this.sartarButton = new System.Windows.Forms.RadioButton();
+            this.lunarEmpireButton = new System.Windows.Forms.RadioButton();
             this.civilisedBox = new System.Windows.Forms.GroupBox();
             this.cultureBox.SuspendLayout();
             this.cultureLayoutPanel.SuspendLayout();
             this.cultureInfoBox.SuspendLayout();
             this.professionGroup.SuspendLayout();
             this.professionInfoBox.SuspendLayout();
-            this.flowLayoutPanel1.SuspendLayout();
+            this.civilisedCulturesLayout.SuspendLayout();
             this.civilisedBox.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -226,35 +226,35 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "No profession selected.";
             // 
-            // flowLayoutPanel1
+            // civilisedCulturesLayout
             // 
-            this.flowLayoutPanel1.AutoScroll = true;
-            this.flowLayoutPanel1.BackColor = System.Drawing.Color.White;
-            this.flowLayoutPanel1.Controls.Add(this.radioButton1);
-            this.flowLayoutPanel1.Controls.Add(this.radioButton2);
-            this.flowLayoutPanel1.Controls.Add(this.radioButton3);
-            this.flowLayoutPanel1.Controls.Add(this.radioButton4);
-            this.flowLayoutPanel1.Controls.Add(this.radioButton5);
-            this.flowLayoutPanel1.Controls.Add(this.radioButton6);
-            this.flowLayoutPanel1.Controls.Add(this.radioButton7);
-            this.flowLayoutPanel1.Controls.Add(this.radioButton8);
-            this.flowLayoutPanel1.Controls.Add(this.radioButton9);
-            this.flowLayoutPanel1.Controls.Add(this.radioButton10);
-            this.flowLayoutPanel1.Controls.Add(this.radioButton11);
-            this.flowLayoutPanel1.Controls.Add(this.radioButton12);
-            this.flowLayoutPanel1.Controls.Add(this.radioButton13);
-            this.flowLayoutPanel1.Controls.Add(this.radioButton14);
-            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowLayoutPanel1.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(3, 16);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(197, 168);
-            this.flowLayoutPanel1.TabIndex = 4;
+            this.civilisedCulturesLayout.AutoScroll = true;
+            this.civilisedCulturesLayout.BackColor = System.Drawing.Color.White;
+            this.civilisedCulturesLayout.Controls.Add(this.sartarButton);
+            this.civilisedCulturesLayout.Controls.Add(this.lunarEmpireButton);
+            this.civilisedCulturesLayout.Controls.Add(this.pavisButton);
+            this.civilisedCulturesLayout.Controls.Add(this.praxButton);
+            this.civilisedCulturesLayout.Controls.Add(this.radioButton5);
+            this.civilisedCulturesLayout.Controls.Add(this.radioButton6);
+            this.civilisedCulturesLayout.Controls.Add(this.radioButton7);
+            this.civilisedCulturesLayout.Controls.Add(this.radioButton8);
+            this.civilisedCulturesLayout.Controls.Add(this.radioButton9);
+            this.civilisedCulturesLayout.Controls.Add(this.radioButton10);
+            this.civilisedCulturesLayout.Controls.Add(this.radioButton11);
+            this.civilisedCulturesLayout.Controls.Add(this.radioButton12);
+            this.civilisedCulturesLayout.Controls.Add(this.radioButton13);
+            this.civilisedCulturesLayout.Controls.Add(this.radioButton14);
+            this.civilisedCulturesLayout.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.civilisedCulturesLayout.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
+            this.civilisedCulturesLayout.Location = new System.Drawing.Point(3, 16);
+            this.civilisedCulturesLayout.Name = "civilisedCulturesLayout";
+            this.civilisedCulturesLayout.Size = new System.Drawing.Size(197, 168);
+            this.civilisedCulturesLayout.TabIndex = 4;
             // 
             // radioButton14
             // 
             this.radioButton14.AutoSize = true;
-            this.radioButton14.Location = new System.Drawing.Point(79, 141);
+            this.radioButton14.Location = new System.Drawing.Point(108, 141);
             this.radioButton14.Name = "radioButton14";
             this.radioButton14.Size = new System.Drawing.Size(64, 17);
             this.radioButton14.TabIndex = 13;
@@ -266,7 +266,7 @@
             // radioButton13
             // 
             this.radioButton13.AutoSize = true;
-            this.radioButton13.Location = new System.Drawing.Point(79, 118);
+            this.radioButton13.Location = new System.Drawing.Point(108, 118);
             this.radioButton13.Name = "radioButton13";
             this.radioButton13.Size = new System.Drawing.Size(59, 17);
             this.radioButton13.TabIndex = 12;
@@ -278,7 +278,7 @@
             // radioButton12
             // 
             this.radioButton12.AutoSize = true;
-            this.radioButton12.Location = new System.Drawing.Point(79, 95);
+            this.radioButton12.Location = new System.Drawing.Point(108, 95);
             this.radioButton12.Name = "radioButton12";
             this.radioButton12.Size = new System.Drawing.Size(64, 17);
             this.radioButton12.TabIndex = 11;
@@ -290,7 +290,7 @@
             // radioButton11
             // 
             this.radioButton11.AutoSize = true;
-            this.radioButton11.Location = new System.Drawing.Point(79, 72);
+            this.radioButton11.Location = new System.Drawing.Point(108, 72);
             this.radioButton11.Name = "radioButton11";
             this.radioButton11.Size = new System.Drawing.Size(59, 17);
             this.radioButton11.TabIndex = 10;
@@ -302,7 +302,7 @@
             // radioButton10
             // 
             this.radioButton10.AutoSize = true;
-            this.radioButton10.Location = new System.Drawing.Point(79, 49);
+            this.radioButton10.Location = new System.Drawing.Point(108, 49);
             this.radioButton10.Name = "radioButton10";
             this.radioButton10.Size = new System.Drawing.Size(70, 17);
             this.radioButton10.TabIndex = 9;
@@ -314,7 +314,7 @@
             // radioButton9
             // 
             this.radioButton9.AutoSize = true;
-            this.radioButton9.Location = new System.Drawing.Point(79, 26);
+            this.radioButton9.Location = new System.Drawing.Point(108, 26);
             this.radioButton9.Name = "radioButton9";
             this.radioButton9.Size = new System.Drawing.Size(63, 17);
             this.radioButton9.TabIndex = 8;
@@ -326,7 +326,7 @@
             // radioButton8
             // 
             this.radioButton8.AutoSize = true;
-            this.radioButton8.Location = new System.Drawing.Point(79, 3);
+            this.radioButton8.Location = new System.Drawing.Point(108, 3);
             this.radioButton8.Name = "radioButton8";
             this.radioButton8.Size = new System.Drawing.Size(64, 17);
             this.radioButton8.TabIndex = 7;
@@ -371,57 +371,61 @@
             this.radioButton5.UseVisualStyleBackColor = true;
             this.radioButton5.Visible = false;
             // 
-            // radioButton4
+            // praxButton
             // 
-            this.radioButton4.AutoSize = true;
-            this.radioButton4.Location = new System.Drawing.Point(3, 72);
-            this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(64, 17);
-            this.radioButton4.TabIndex = 3;
-            this.radioButton4.TabStop = true;
-            this.radioButton4.Text = "Primitive";
-            this.radioButton4.UseVisualStyleBackColor = true;
-            this.radioButton4.Visible = false;
+            this.praxButton.AutoSize = true;
+            this.praxButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.praxButton.Location = new System.Drawing.Point(3, 72);
+            this.praxButton.Name = "praxButton";
+            this.praxButton.Size = new System.Drawing.Size(50, 17);
+            this.praxButton.TabIndex = 3;
+            this.praxButton.TabStop = true;
+            this.praxButton.Text = "Prax";
+            this.praxButton.UseVisualStyleBackColor = true;
+            this.praxButton.Visible = false;
             // 
-            // radioButton3
+            // pavisButton
             // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(3, 49);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(59, 17);
-            this.radioButton3.TabIndex = 2;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "Nomad";
-            this.radioButton3.UseVisualStyleBackColor = true;
-            this.radioButton3.Visible = false;
+            this.pavisButton.AutoSize = true;
+            this.pavisButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pavisButton.Location = new System.Drawing.Point(3, 49);
+            this.pavisButton.Name = "pavisButton";
+            this.pavisButton.Size = new System.Drawing.Size(56, 17);
+            this.pavisButton.TabIndex = 2;
+            this.pavisButton.TabStop = true;
+            this.pavisButton.Text = "Pavis";
+            this.pavisButton.UseVisualStyleBackColor = true;
+            this.pavisButton.Visible = false;
             // 
-            // radioButton2
+            // sartarButton
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(3, 26);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(70, 17);
-            this.radioButton2.TabIndex = 1;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Barbarian";
-            this.radioButton2.UseVisualStyleBackColor = true;
-            this.radioButton2.Visible = false;
+            this.sartarButton.AutoSize = true;
+            this.sartarButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sartarButton.Location = new System.Drawing.Point(3, 3);
+            this.sartarButton.Name = "sartarButton";
+            this.sartarButton.Size = new System.Drawing.Size(59, 17);
+            this.sartarButton.TabIndex = 1;
+            this.sartarButton.TabStop = true;
+            this.sartarButton.Text = "Sartar";
+            this.sartarButton.UseVisualStyleBackColor = true;
+            this.sartarButton.Visible = false;
             // 
-            // radioButton1
+            // lunarEmpireButton
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(3, 3);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(63, 17);
-            this.radioButton1.TabIndex = 0;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Civilised";
-            this.radioButton1.UseVisualStyleBackColor = true;
-            this.radioButton1.Visible = false;
+            this.lunarEmpireButton.AutoSize = true;
+            this.lunarEmpireButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lunarEmpireButton.Location = new System.Drawing.Point(3, 26);
+            this.lunarEmpireButton.Name = "lunarEmpireButton";
+            this.lunarEmpireButton.Size = new System.Drawing.Size(99, 17);
+            this.lunarEmpireButton.TabIndex = 0;
+            this.lunarEmpireButton.TabStop = true;
+            this.lunarEmpireButton.Text = "Lunar Empire";
+            this.lunarEmpireButton.UseVisualStyleBackColor = true;
+            this.lunarEmpireButton.Visible = false;
             // 
             // civilisedBox
             // 
-            this.civilisedBox.Controls.Add(this.flowLayoutPanel1);
+            this.civilisedBox.Controls.Add(this.civilisedCulturesLayout);
             this.civilisedBox.Location = new System.Drawing.Point(126, 12);
             this.civilisedBox.Name = "civilisedBox";
             this.civilisedBox.Size = new System.Drawing.Size(203, 187);
@@ -450,8 +454,8 @@
             this.cultureInfoBox.ResumeLayout(false);
             this.professionGroup.ResumeLayout(false);
             this.professionInfoBox.ResumeLayout(false);
-            this.flowLayoutPanel1.ResumeLayout(false);
-            this.flowLayoutPanel1.PerformLayout();
+            this.civilisedCulturesLayout.ResumeLayout(false);
+            this.civilisedCulturesLayout.PerformLayout();
             this.civilisedBox.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -473,11 +477,11 @@
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
         private System.Windows.Forms.GroupBox professionInfoBox;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton3;
-        private System.Windows.Forms.RadioButton radioButton4;
+        private System.Windows.Forms.FlowLayoutPanel civilisedCulturesLayout;
+        private System.Windows.Forms.RadioButton lunarEmpireButton;
+        private System.Windows.Forms.RadioButton sartarButton;
+        private System.Windows.Forms.RadioButton pavisButton;
+        private System.Windows.Forms.RadioButton praxButton;
         private System.Windows.Forms.RadioButton radioButton5;
         private System.Windows.Forms.RadioButton radioButton6;
         private System.Windows.Forms.RadioButton radioButton7;
