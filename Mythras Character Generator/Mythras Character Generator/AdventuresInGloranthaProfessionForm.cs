@@ -36,5 +36,15 @@ namespace Mythras_Character_Generator
         {
 
         }
+
+        private void civilisedButton_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void charUnButton_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
