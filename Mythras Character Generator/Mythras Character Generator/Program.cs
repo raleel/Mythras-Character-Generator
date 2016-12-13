@@ -16,7 +16,7 @@ namespace Mythras_Character_Generator
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new SystemSelectForm());
+            Application.Run(new Form1());
         }
     }
 }

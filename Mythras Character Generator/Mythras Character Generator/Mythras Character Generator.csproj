@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{95019112-1DA8-4911-B2F5-D79156963E18}</ProjectGuid>
+    <ProjectGuid>{2B8D7C2E-81C9-4182-9BB3-68BE6EC2A9A0}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Mythras_Character_Generator</RootNamespace>
@@ -46,35 +46,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AdventuresInGloranthaForm.cs">
+    <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AdventuresInGloranthaForm.Designer.cs">
-      <DependentUpon>AdventuresInGloranthaForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="AdventuresInGloranthaProfessionForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="AdventuresInGloranthaProfessionForm.Designer.cs">
-      <DependentUpon>AdventuresInGloranthaProfessionForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="SystemSelectForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="SystemSelectForm.Designer.cs">
-      <DependentUpon>SystemSelectForm.cs</DependentUpon>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="AdventuresInGloranthaForm.resx">
-      <DependentUpon>AdventuresInGloranthaForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="AdventuresInGloranthaProfessionForm.resx">
-      <DependentUpon>AdventuresInGloranthaProfessionForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="SystemSelectForm.resx">
-      <DependentUpon>SystemSelectForm.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

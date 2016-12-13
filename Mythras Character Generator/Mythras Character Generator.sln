@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mythras Character Generator", "Mythras Character Generator\Mythras Character Generator.csproj", "{95019112-1DA8-4911-B2F5-D79156963E18}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mythras Character Generator", "Mythras Character Generator\Mythras Character Generator.csproj", "{2B8D7C2E-81C9-4182-9BB3-68BE6EC2A9A0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{95019112-1DA8-4911-B2F5-D79156963E18}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{95019112-1DA8-4911-B2F5-D79156963E18}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{95019112-1DA8-4911-B2F5-D79156963E18}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{95019112-1DA8-4911-B2F5-D79156963E18}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B8D7C2E-81C9-4182-9BB3-68BE6EC2A9A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B8D7C2E-81C9-4182-9BB3-68BE6EC2A9A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B8D7C2E-81C9-4182-9BB3-68BE6EC2A9A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B8D7C2E-81C9-4182-9BB3-68BE6EC2A9A0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
