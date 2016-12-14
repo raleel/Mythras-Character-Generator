@@ -83,7 +83,7 @@
 
   <culture_type>
     <culture_type_name>Primitive</culture_type_name>
-    <culture_type_skills>
+    <culture_type_skills choices="1">
       <!-- Basic -->
       <skill choice="1">Athletics</skill>
       <skill choice="1">Boating</skill>
