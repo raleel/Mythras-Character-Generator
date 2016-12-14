@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<culture_types_list>
+	<!-- RACE TEMPLATE
+	<culture_types>
+		<culture_type_name></culture_type_name>
+		<culture_type_skills>
+			<skill></skill>
+		</culture_type_skills>
+	</culture_type>
+	-->
+	
+	<culture_type>
+		<culture_type_name>Civilised</culture_type_name>
+		<culture_type_skills>
+			<!-- Basic -->
+			<skill>Conceal</skill>
+			<skill>Deceit</skill>
+			<skill>Drive</skill>
+			<skill>Influence</skill>
+			<skill>Insight</skill>
+			<skill>Locale</skill>
+			<skill>Willpower</skill>
+			<!-- Professional -->
+			<skill>Art</skill>
+			<skill>Commerce</skill>
+			<skill>Craft</skill>
+			<skill>Courtesy</skill>
+			<skill>Language</skill>
+			<skill>Lore</skill>
+			<skill>Musicianship</skill>
+			<skill>Streetwise</skill>
+		</culture_type_skills>
+	</culture_type>
+
+  <culture_type>
+    <culture_type_name>Barbarian</culture_type_name>
+    <culture_type_skills choices="1">
+      <!-- Basic -->
+      <skill>Athletics</skill>
+      <skill choice="1">Boating</skill>
+      <skill>Brawn</skill>
+      <skill>Endurance</skill>
+      <skill>First Aid</skill>
+      <skill>Locale</skill>
+      <skill>Perception</skill>
+      <skill choice="1">Ride</skill>
+      <!-- Professional -->
+      <skill>Craft</skill>
+      <skill>Healing</skill>
+      <skill>Lore</skill>
+      <skill>Musicianship</skill>
+      <skill>Navigate</skill>
+      <skill>Seamanship</skill>
+      <skill>Survival</skill>
+      <skill>Track</skill>
+    </culture_type_skills>
+  </culture_type>
+
+  <culture_type>
+    <culture_type_name>Nomadic</culture_type_name>
+    <culture_type_skills choices="2">
+      <!-- Basic -->
+      <skill choice="1">Athletics</skill>
+      <skill choice="1">Boating</skill>
+      <skill choice="1">Drive</skill>
+      <skill>Endurance</skill>
+      <skill>First Aid</skill>
+      <skill>Locale</skill>
+      <skill>Perception</skill>
+      <skill>Stealth</skill>
+      <skill choice="1">Swim</skill>
+      <!-- Professional -->
+      <skill>Craft</skill>
+      <skill>Culture</skill>
+      <skill>Language</skill>
+      <skill>Lore</skill>
+      <skill>Musicianship</skill>
+      <skill>Navigate</skill>
+      <skill>Survival</skill>
+      <skill>Track</skill>
+    </culture_type_skills>
+  </culture_type>
+
+  <culture_type>
+    <culture_type_name>Primitive</culture_type_name>
+    <culture_type_skills>
+      <!-- Basic -->
+      <skill choice="1">Athletics</skill>
+      <skill choice="1">Boating</skill>
+      <skill>Brawn</skill>
+      <skill>Endurance</skill>
+      <skill>Evade</skill>
+      <skill>Locale</skill>
+      <skill>Perception</skill>
+      <skill>Stealth</skill>
+      <skill choice="1">Swim</skill>
+      <!-- Professional -->
+      <skill>Craft</skill>
+      <skill>Healing</skill>
+      <skill>Lore</skill>
+      <skill>Musicianship</skill>
+      <skill>Navigate</skill>
+      <skill>Seamanship</skill>
+      <skill>Survival</skill>
+      <skill>Track</skill>
+    </culture_type_skills>
+  </culture_type>
+  
+</culture_types_list>

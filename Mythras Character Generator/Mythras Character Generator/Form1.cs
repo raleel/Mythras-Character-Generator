@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Mythras_Character_Generator.GameClasses;
 
 namespace Mythras_Character_Generator
 {
@@ -15,6 +16,12 @@ namespace Mythras_Character_Generator
         public Form1()
         {
             InitializeComponent();
+            SettingInformationStore sis = new SettingInformationStore();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

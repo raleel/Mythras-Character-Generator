@@ -1,0 +1,197 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<skill_list>
+  <!-- SKILL TEMPLATE
+  <skill>
+    <skill_name></skill_name>
+    <skill_type></skill_type>
+    <skill_first_stat></skill_first_stat>
+    <skill_second_stat></skill_second_stat>
+    <skill_description>
+      
+    </skill_description>
+  </skill>
+  -->
+
+  <!-- STANDARD SKILLS -->
+  <skill>
+    <skill_name>Athletics</skill_name>
+    <skill_type>Standard</skill_type>
+    <skill_first_stat>STR</skill_first_stat>
+    <skill_second_stat>DEX</skill_second_stat>
+    <skill_description>
+      Athletics covers a range of physical activities, including climbing, jumping, and running. If an adventurer is wearing armour, the distances he can climb, run or jump are affected by the Armour Penalty.
+    </skill_description>
+  </skill>
+
+  <skill>
+    <skill_name>Boating</skill_name>
+    <skill_type>Standard</skill_type>
+    <skill_first_stat>STR</skill_first_stat>
+    <skill_second_stat>CON</skill_second_stat>
+    <skill_description>
+      The Boating skill covers the operation of small floating craft on rivers, lakes, and close inshore. Appropriate vessels are generally boats, canoes or rafts which travel short distances, and are unsuited to the rigours of the open sea. Most are propelled using oars, paddles, punts or simple sails; or can even be towed by animals. Ships with large crews or designed for long, overseas journeys are covered under the Seamanship professional skill.
+    </skill_description>
+  </skill>
+  
+  <skill>
+    <skill_name>Brawn</skill_name>
+    <skill_type>Standard</skill_type>
+    <skill_first_stat>STR</skill_first_stat>
+    <skill_second_stat>SIZ</skill_second_stat>
+    <skill_description>
+      Brawn is the efficient application of technique when applying raw physical force. The skill covers acts of applied might, including lifting, breaking, and contests of strength.
+    </skill_description>
+  </skill>
+  
+  <skill>
+    <skill_name>Conceal</skill_name>
+    <skill_type>Standard</skill_type>
+    <skill_first_stat>DEX</skill_first_stat>
+    <skill_second_stat>POW</skill_second_stat>
+    <skill_description>
+      Conceal is the counterpoint to Stealth, being the concealment of large objects rather than the character themselves. For instance conceal could be used to hide a chariot behind some rocks, or sweep away the wheel ruts of the chariot so its path cannot be tracked. The skill is versatile in application, anything from hiding a scroll in a library to disguising the presence of a trap or secret passage.
+    </skill_description>
+  </skill>
+  
+  <skill>
+    <skill_name>Deceit</skill_name>
+    <skill_type>Standard</skill_type>
+    <skill_first_stat>INT</skill_first_stat>
+    <skill_second_stat>CHA</skill_second_stat>
+    <skill_description>
+      
+    </skill_description>
+  </skill>
+  
+  <skill>
+    <skill_name>Drive</skill_name>
+    <skill_type>Standard</skill_type>
+    <skill_first_stat>DEX</skill_first_stat>
+    <skill_second_stat>POW</skill_second_stat>
+    <skill_description>
+      
+    </skill_description>
+  </skill>
+  
+  <skill>
+    <skill_name>Influence</skill_name>
+    <skill_type>Standard</skill_type>
+    <skill_first_stat>CHA</skill_first_stat>
+    <skill_second_stat>CHA</skill_second_stat>
+    <skill_description>
+      
+    </skill_description>
+  </skill>
+  
+  <skill>
+    <skill_name>Insight</skill_name>
+    <skill_type>Standard</skill_type>
+    <skill_first_stat>INT</skill_first_stat>
+    <skill_second_stat>POW</skill_second_stat>
+    <skill_description>
+      
+    </skill_description>
+  </skill>
+
+  <skill>
+    <skill_name>Locale</skill_name>
+    <skill_type>Standard</skill_type>
+    <skill_first_stat>INT</skill_first_stat>
+    <skill_second_stat>INT</skill_second_stat>
+    <skill_description>
+      
+    </skill_description>
+  </skill>
+
+  <skill>
+    <skill_name>Willpower</skill_name>
+    <skill_type>Standard</skill_type>
+    <skill_first_stat>POW</skill_first_stat>
+    <skill_second_stat>POW</skill_second_stat>
+    <skill_description>
+      
+    </skill_description>
+  </skill>
+
+  <!-- PROFESSIONAL SKILLS -->
+  <skill>
+    <skill_name>Art</skill_name>
+    <skill_type>Professional</skill_type>
+    <skill_first_stat>POW</skill_first_stat>
+    <skill_second_stat>CHA</skill_second_stat>
+    <skill_description>
+      
+    </skill_description>
+  </skill>
+  
+  <skill>
+    <skill_name>Commerce</skill_name>
+    <skill_type>Professional</skill_type>
+    <skill_first_stat>INT</skill_first_stat>
+    <skill_second_stat>CHA</skill_second_stat>
+    <skill_description>
+      
+    </skill_description>
+  </skill>
+
+  <skill>
+    <skill_name>Craft</skill_name>
+    <skill_type>Professional</skill_type>
+    <skill_first_stat>DEX</skill_first_stat>
+    <skill_second_stat>INT</skill_second_stat>
+    <skill_description>
+      
+    </skill_description>
+  </skill>
+  
+  <skill>
+    <skill_name>Courtesy</skill_name>
+    <skill_type>Professional</skill_type>
+    <skill_first_stat>INT</skill_first_stat>
+    <skill_second_stat>CHA</skill_second_stat>
+    <skill_description>
+      
+    </skill_description>
+  </skill>
+  
+  <skill>
+    <skill_name>Language</skill_name>
+    <skill_type>Professional</skill_type>
+    <skill_first_stat>INT</skill_first_stat>
+    <skill_second_stat>CHA</skill_second_stat>
+    <skill_description>
+      
+    </skill_description>
+  </skill>
+  
+  <skill>
+    <skill_name>Lore</skill_name>
+    <skill_type>Professional</skill_type>
+    <skill_first_stat>INT</skill_first_stat>
+    <skill_second_stat>INT</skill_second_stat>
+    <skill_description>
+      
+    </skill_description>
+  </skill>
+  
+  <skill>
+    <skill_name>Musicianship</skill_name>
+    <skill_type>Professional</skill_type>
+    <skill_first_stat>DEX</skill_first_stat>
+    <skill_second_stat>CHA</skill_second_stat>
+    <skill_description>
+      
+    </skill_description>
+  </skill>
+  
+  <skill>
+    <skill_name>Streetwise</skill_name>
+    <skill_type>Professional</skill_type>
+    <skill_first_stat>POW</skill_first_stat>
+    <skill_second_stat>CHA</skill_second_stat>
+    <skill_description>
+      
+    </skill_description>
+  </skill>
+</skill_list>
