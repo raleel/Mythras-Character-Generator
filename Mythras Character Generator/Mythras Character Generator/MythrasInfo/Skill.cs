@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Mythras_Character_Generator.GameClasses
+namespace Mythras_Character_Generator.MythrasInfo
 {
     /**
      * Class for the skills in the system.

@@ -53,6 +53,7 @@
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="MythrasInfo\CultureType.cs" />
+    <Compile Include="MythrasInfo\Race.cs" />
     <Compile Include="MythrasInfo\SettingInformationStore.cs" />
     <Compile Include="MythrasInfo\Skill.cs" />
     <Compile Include="Program.cs" />

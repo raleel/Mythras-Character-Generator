@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Mythras_Character_Generator.GameClasses
+namespace Mythras_Character_Generator.MythrasInfo
 {
     /**
      * Class for culture types in the system.
@@ -31,6 +31,19 @@ namespace Mythras_Character_Generator.GameClasses
         public void addCultureTypeSkill(Skill skill)
         {
             cultureSkills.Add(skill.getSkillName(), skill);
+        }
+
+        public override string ToString()
+        {
+            string ToString = cultureTypeName;
+
+            ToString += "\r\n<b>Skills</b>";
+            foreach (KeyValuePair<string, Skill> entry in cultureSkills)
+            {
+                ToString += "\r\n" + entry.Key;
+            }
+
+            return ToString;
         }
     }
 }

@@ -5,17 +5,20 @@ using System.Text;
 using System.Xml;
 using System.Threading.Tasks;
 
-namespace Mythras_Character_Generator.GameClasses
+namespace Mythras_Character_Generator.MythrasInfo
 {
     public class SettingInformationStore
     {
         Dictionary<string, CultureType> cultureTypes;
         Dictionary<string, Skill> skills;
+        Dictionary<string, Race> races;
 
         public SettingInformationStore()
         {
             cultureTypes = new Dictionary<string, CultureType>();
             skills = new Dictionary<string, Skill>();
+            races = new Dictionary<string, Race>();
+            addRaces();
             readSkillsFromXML("..\\..\\xmlStore\\BaseMythras\\Skills\\skills_default.xml");
             readCultureTypesFromXML("..\\..\\xmlStore\\BaseMythras\\Cultures\\culturetypes_default.xml");
         }
@@ -145,5 +148,39 @@ namespace Mythras_Character_Generator.GameClasses
             cultureTypes.Add(cultureType.getCultureTypeName(), cultureType);
         }
 
+        public string getCultureInformation(string cultureName)
+        {
+            return cultureTypes[cultureName].ToString();
+        }
+
+        public Dictionary<int, string> getAllCultureNames()
+        {
+            Dictionary<int, string> cultureNames = new Dictionary<int, string>();
+            int i = 1;
+            foreach (KeyValuePair<string, CultureType> entry in cultureTypes)
+            {
+                cultureNames.Add(i, entry.Key);
+                i++;
+            }
+            return cultureNames;
+        }
+
+        public Dictionary<int, string> getAllRaceNames()
+        {
+            Dictionary<int, string> raceNames = new Dictionary<int, string>();
+            int i = 1;
+            foreach (KeyValuePair<string, Race> entry in races)
+            {
+                raceNames.Add(i, entry.Key);
+                i++;
+            }
+            return raceNames;
+        }
+
+        public void addRaces()
+        {
+            Race race = new Race();
+            races.Add(race.getName(), race);
+        }
     }
 }
