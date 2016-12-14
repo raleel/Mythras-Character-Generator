@@ -31,6 +31,7 @@ namespace Mythras_Character_Generator
             {
                 RadioButton newButton = new RadioButton();
                 newButton.Text = raceNames[i];
+                newButton.Click += new EventHandler(raceButtonClick);
                 raceButtons.Add(newButton);
                 this.raceLayoutPanel.Controls.Add(newButton);
                 if (i == 1)
@@ -49,6 +50,7 @@ namespace Mythras_Character_Generator
             {
                 RadioButton newButton = new RadioButton();
                 newButton.Text = cultureNames[i];
+                newButton.Click += new EventHandler(cultureButtonClick);
                 cultureButtons.Add(newButton);
                 this.cultureTypeLayoutPanel.Controls.Add(newButton);
                 if (i == 1)
@@ -57,6 +59,17 @@ namespace Mythras_Character_Generator
                     cultureTypeInfoText.Text = sis.getCultureInformation(cultureNames[i]);
                 }
             }
+        }
+
+        public void raceButtonClick(object Sender, EventArgs e)
+        {
+            string raceName = this.raceLayoutPanel.Controls.OfType<RadioButton>().FirstOrDefault(r => r.Checked).Text;
+        }
+
+        public void cultureButtonClick(object sender, EventArgs e)
+        {
+            string cultureName = this.cultureTypeLayoutPanel.Controls.OfType<RadioButton>().FirstOrDefault(r => r.Checked).Text;
+            cultureTypeInfoText.Text = sis.getCultureInformation(cultureName);
         }
 
         private void Form1_Load(object sender, EventArgs e)
