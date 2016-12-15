@@ -399,7 +399,7 @@
   <skill>
     <skill_name>Literacy</skill_name>
     <skill_type>Professional</skill_type>
-    <skill_first_stat>INT/skill_first_stat>
+    <skill_first_stat>INT</skill_first_stat>
     <skill_second_stat>INT</skill_second_stat>
     <skill_description>
       
@@ -409,7 +409,7 @@
   <skill>
     <skill_name>Lockpicking</skill_name>
     <skill_type>Professional</skill_type>
-    <skill_first_stat>DEX/skill_first_stat>
+    <skill_first_stat>DEX</skill_first_stat>
     <skill_second_stat>DEX</skill_second_stat>
     <skill_description>
       
