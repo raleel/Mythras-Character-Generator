@@ -32,7 +32,152 @@
       <skill>Language</skill>
       <skill>Sleight</skill>
       <skill>Streetwise</skill>
+      <skill>Survival</skill>
       <skill>Track</skill>
+    </skills>
+  </profession>
+  <profession>
+    <profession_name>Alchemist</profession_name>
+    <profession_description>
+      Alchemists concern themselves with creating, or trading in, a wide range of chemical and herbal substances which are used by the local community. These concoctions can vary in purpose – soaps, polishes, dyes, disinfectants, acids, oils, unguents, perfumes, narcot- ics, medicines, poisons – the list is almost endless. The larger the society they reside in, the more likely that the alchemist will special- ise in making or selling one specific type of compound.
+    </profession_description>
+    <skills>
+      <!-- STANDARD SKILLS -->
+      <skill>Customs</skill>
+      <skill>Endurance</skill>
+      <skill>First Aid</skill>
+      <skill>Insight</skill>
+      <skill>Locale</skill>
+      <skill>Perception</skill>
+      <skill>Willpower</skill>
+      <!-- PROFESSIONAL SKILLS -->
+      <skill>Commerce</skill>
+      <skill>Craft</skill>
+      <skill>Healing</skill>
+      <skill>Language</skill>
+      <skill>Literacy</skill>
+      <skill>Lore</skill>
+      <skill>Streetwise</skill>
+    </skills>
+  </profession>
+  <profession>
+    <profession_name>Beast Handler</profession_name>
+    <profession_description>
+      Beast handlers make their living by capturing, trading, breeding, caring for, or domesticating creatures for a variety of different roles in the community. Examples include horse-whisperers, falconers, hound masters, snake wranglers, and the like. Some raise ostensibly wild animals for domesticated use, whilst others tend the beasts on display in private menageries. A few even take captured beasts and turn them into guardians, battlefield weapons, or competitors for pit fights and gladiatorial events.
+    </profession_description>
+    <skills>
+      <!-- STANDARD SKILLS -->
+      <skill>Drive</skill>
+      <skill>Endurance</skill>
+      <skill>First Aid</skill>
+      <skill>Influence</skill>
+      <skill>Locale</skill>
+      <skill>Ride</skill>
+      <skill>Willpower</skill>
+      <!-- PROFESSIONAL SKILLS -->
+      <skill>Commerce</skill>
+      <skill>Craft</skill>
+      <skill>Healing</skill>
+      <skill>Lore</skill>
+      <skill>Survival</skill>
+      <skill>Teach</skill>
+      <skill>Track</skill>
+    </skills>
+  </profession>
+  <profession>
+    <profession_name>Courtesan</profession_name>
+    <profession_description>
+      Professional companions, courtesans make their living through providing company, conversation, dance, singing, and sometimes other services to those who can afford it. The attitude towards cour- tesans can vary dramatically according to their culture, some are little more than tavern girls only there to draw in customers, whilst others are revered by the high ranking wealthy. The most famous and skilled courtesans may literally have princes begging at their feet. Courtesans can be both male and female.
+    </profession_description>
+    <skills>
+      <!-- STANDARD SKILLS -->
+      <skill>Customs</skill>
+      <skill>Dance</skill>
+      <skill>Deceit</skill>
+      <skill>Influence</skill>
+      <skill>Insight</skill>
+      <skill>Perception</skill>
+      <skill>Sing</skill>
+      <!-- PROFESSIONAL SKILLS -->
+      <skill>Art</skill>
+      <skill>Courtesy</skill>
+      <skill>Culture</skill>
+      <skill>Gambling</skill>
+      <skill>Language</skill>
+      <skill>Musicianship</skill>
+      <skill>Seduction</skill>
+    </skills>
+  </profession>
+  <profession>
+    <profession_name>Courtier</profession_name>
+    <profession_description>
+      Traditionally members of the gentility or nobility, courtiers are those summoned into the service of a ruler or government to act as an adviser, a companion, an aide or simply as a lackey. Chosen for their ability to be persuasive, insightful or discreet, they are often the power-brokers behind domestic and foreign policy. Some courtiers are in fact ambassadorial representatives from another, foreign nation. Courtiers see and hear much about the affairs of state, and may learn a great deal about politics and scandal in high places. Whatever their political standing, the machinations of courtiers can save or undermine a nation.   
+    </profession_description>
+    <skills>
+      <!-- STANDARD SKILLS -->
+      <skill>Customs</skill>
+      <skill>Dance</skill>
+      <skill>Deceit</skill>
+      <skill>Influence</skill>
+      <skill>Insight</skill>
+      <skill>Locale</skill>
+      <skill>Perception</skill>
+      <!-- PROFESSIONAL SKILLS -->
+      <skill>Art</skill>
+      <skill>Bureaucracy</skill>
+      <skill>Courtesy</skill>
+      <skill>Culture</skill>
+      <skill>Language</skill>
+      <skill>Lore</skill>
+      <skill>Oratory</skill>
+    </skills>
+  </profession>
+  <profession>
+    <profession_name>Crafter</profession_name>
+    <profession_description>
+      Skilled artisans, professional craftsmen cover a huge range of trades: from basket making through to weaving. Most craftsmen spe- cialise in one particular area, but it is not uncommon to find those skilled in a second field related to their primary craft. Some crafters have associated experience in buying materials and selling their own wares, depending on their scale of their business. Primitive crafters may simply be individuals who produce objects for their family or tribe. Civilised crafters on the other hand might be part of a fam- ily enterprise or members of an official guild. Some crafts may be unavailable or illogical for particular cultures, such as a smith for primitives. 
+    </profession_description>
+    <skills>
+      <!-- STANDARD SKILLS -->
+      <skill>Brawn</skill>
+      <skill>Drive</skill>
+      <skill>Influence</skill>
+      <skill>Insight</skill>
+      <skill>Locale</skill>
+      <skill>Perception</skill>
+      <skill>Willpower</skill>
+      <!-- PROFESSIONAL SKILLS -->
+      <skill>Art</skill>
+      <skill>Commerce</skill>
+      <skill>Craft</skill>
+      <skill>Craft</skill>
+      <skill>Engineering</skill>
+      <skill>Mechanisms</skill>
+      <skill>Streetwise</skill>
+    </skills>
+  </profession>
+  <profession>
+    <profession_name>Entertainer</profession_name>
+    <profession_description>
+      Professional entertainers, have a range of skills in which they can specialise. Acrobats perform feats of balance, gymnastics, and hand-eye co-ordination. Actors present plays or ribald pantomimes. Dancers entertain with diverse dances ranging from the erotic to ceremonial. Musicians use their instruments to perform private concerts or provide background music. Poets recite great works of literature, and lyric poetry, whereas singers perform choral works, often as choirs. Story-tellers recount apocryphal tales, and so on. Entertainers sometimes learn several complimentary arts to increase their repertoire and create unique acts. For instance, a bard might combine the arts of music, singing and poetry.
+    </profession_description>
+    <skills>
+      <!-- STANDARD SKILLS -->
+      <skill>Athletics</skill>
+      <skill>Brawn</skill>
+      <skill>Dance</skill>
+      <skill>Deceit</skill>
+      <skill>Influence</skill>
+      <skill>Insight</skill>
+      <skill>Sing</skill>
+      <!-- PROFESSIONAL SKILLS -->
+      <skill>Acrobatics</skill>
+      <skill>Acting</skill>
+      <skill>Oratory</skill>
+      <skill>Musicianship</skill>
+      <skill>Seduction</skill>
+      <skill>Sleight</skill>
+      <skill>Streetwise</skill>
     </skills>
   </profession>
 </profession_list>
