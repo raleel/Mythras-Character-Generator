@@ -180,4 +180,412 @@
       <skill>Streetwise</skill>
     </skills>
   </profession>
+  <profession>
+    <profession_name>Farmer</profession_name>
+    <profession_description>
+      Farmers cultivate the land, raising or harvesting crops, but they are often generalists in a range of skills necessary for foraging or maintaining their chattels. Usually their produce is food and other useful flora, such as medicinal herbs or plants which produce fibres for clothing. Not all agriculturalists necessarily tend a farm or plan- tation. Some wander through wild regions harvesting the naturally occurring vegetation, whilst others are employed to supervise formal gardens for rich patrons. Likewise not all farmers are necessarily yokels tied to a small pasture, orchard or vineyard. Many cultures may place high status on owners of large estates who manage the running of their property.    
+    </profession_description>
+    <skills>
+      <!-- STANDARD SKILLS -->
+      <skill>Athletics</skill>
+      <skill>Brawn</skill>
+      <skill>Drive</skill>
+      <skill>Endurance</skill>
+      <skill>Locale</skill>
+      <skill>Perception</skill>
+      <skill>Ride</skill>
+      <!-- PROFESSIONAL SKILLS -->
+      <skill>Commerce</skill>
+      <skill>Craft</skill>
+      <skill>Lore</skill>
+      <skill>Lore</skill>
+      <skill>Navigation</skill>
+      <skill>Survival</skill>
+      <skill>Track</skill>
+    </skills>
+  </profession>
+  <profession>
+    <profession_name>Fisher</profession_name>
+    <profession_description>
+      Fishermen work the waters, braving the elements and dangers to bring back its bounty. Mostly they trawl for edible food, any- thing from shellfish to whales. A few seek commodities other than food however, particularly valuable items like rare shells, pearls or even medicinal types of water plants. The social rank of fishermen depends on the value of what they recover; a primitive island based culture for example, might grant high status to those who bring back the greatest amount or most dangerous produce. Fishermen do not necessarily need boats, and neither are they tied to the sea. Many live beside lakes or along rivers, using nets, baskets, and weirs to trap their catch.
+    </profession_description>
+    <skills>
+      <!-- STANDARD SKILLS -->
+      <skill>Athletics</skill>
+      <skill>Boating</skill>
+      <skill>Endurance</skill>
+      <skill>Locale</skill>
+      <skill>Perception</skill>
+      <skill>Stealth</skill>
+      <skill>Swim</skill>
+      <!-- PROFESSIONAL SKILLS -->
+      <skill>Commerce</skill>
+      <skill>Craft</skill>
+      <skill>Lore</skill>
+      <skill>Lore</skill>
+      <skill>Navigation</skill>
+      <skill>Seamanship</skill>
+      <skill>Survival</skill>
+    </skills>
+  </profession>
+  <profession>
+    <profession_name>Herder</profession_name>
+    <profession_description>
+      Herders are those who raise and tend flocks of creatures, not necessarily domesticated animals; anything from goats to migrating mammoths. Most herdsmen spend days or even weeks out on the plains or hills, ensuring their beasts have sufficient food and water, whilst also watching for predators. A herder does not necessarily raise his own livestock; some hire themselves out to escort herds over large distances to far off markets or use their skills to purchase stock for less discerning customers. It can be a solitary profession, but herdsmen generally know the land, the seasons, and the habits of their animals.
+    </profession_description>
+    <skills>
+      <!-- STANDARD SKILLS -->
+      <skill>Endurance</skill>
+      <skill>First Aid</skill>
+      <skill>Insight</skill>
+      <skill>Locale</skill>
+      <skill>Perception</skill>
+      <skill>Ride</skill>
+      <skill>Combat Style</skill>
+      <!-- PROFESSIONAL SKILLS -->
+      <skill>Commerce</skill>
+      <skill>Craft</skill>
+      <skill>Healing</skill>
+      <skill>Navigation</skill>
+      <skill>Musicianship</skill>
+      <skill>Survival</skill>
+      <skill>Track</skill>
+    </skills>
+  </profession>
+  <profession>
+    <profession_name>Hunter</profession_name>
+    <profession_description>
+      Responsible for finding, tracking, and killing creatures, the hunter, like the herder, is knowledgeable about the land and the behaviour of animals. A hunter may hunt in a variety of ways: sim- ple stalking, trap laying or driving creatures into pens. The purpose of the hunt depends on the culture of the hunter. Most seek out prey for the simple purpose of gathering food, but some hunters specialise in the extermination of deadly predators or the culling of animals for valuable body parts: furs, horns or teeth for instance. Hunters often learn a supplemental craft for preserving or skinning the creatures they kill.
+    </profession_description>
+    <skills>
+      <!-- STANDARD SKILLS -->
+      <skill>Athletics</skill>
+      <skill>Endurance</skill>
+      <skill>Locale</skill>
+      <skill>Perception</skill>
+      <skill>Ride</skill>
+      <skill>Stealth</skill>
+      <skill>Combat Style</skill>
+      <!-- PROFESSIONAL SKILLS -->
+      <skill>Commerce</skill>
+      <skill>Craft</skill>
+      <skill>Lore</skill>
+      <skill>Mechanisms</skill>
+      <skill>Navigation</skill>
+      <skill>Survival</skill>
+      <skill>Track</skill>
+    </skills>
+  </profession>
+  <profession>
+    <profession_name>Merchant</profession_name>
+    <profession_description>
+      Merchants come in many forms: the street vendor, small shopkeeper, wily caravanserai, intrepid merchant-venturer, and many more. Although their methods or merchandise are different, all have one thing in common: to trade commodities (be it goods, food, live- stock, people, property or even money) for the highest profit. Mer- chants know a bargain, and how to drive a good one; and not all trade in legal merchandise. Due to their dealings as middle men, many merchants pick up some knowledge of foreign cultures and languages.
+    </profession_description>
+    <skills>
+      <!-- STANDARD SKILLS -->
+      <skill>Boating</skill>
+      <skill>Drive</skill>
+      <skill>Deceit</skill>
+      <skill>Insight</skill>
+      <skill>Influence</skill>
+      <skill>Locale</skill>
+      <skill>Ride</skill>
+      <!-- PROFESSIONAL SKILLS -->
+      <skill>Commerce</skill>
+      <skill>Courtesy</skill>
+      <skill>Culture</skill>
+      <skill>Language</skill>
+      <skill>Navigation</skill>
+      <skill>Seamanship</skill>
+      <skill>Streetwise</skill>
+    </skills>
+  </profession>
+  <profession>
+    <profession_name>Miner</profession_name>
+    <profession_description>
+      Miners are those who excavate the ground, for a number of rea- sons. Some dig for ore and precious metals, a few seek out special types of stone for building or statuary, whilst others dig to create catacombs or sewers, or to penetrate the defences of towns. What- ever the purpose, miners are prepared to go deep into the ground, risking life and limb. As a result, miners tend to be both physically and mentally strong; used to working in hot, cramped conditions for hours on end.
+    </profession_description>
+    <skills>
+      <!-- STANDARD SKILLS -->
+      <skill>Athletics</skill>
+      <skill>Brawn</skill>
+      <skill>Endurance</skill>
+      <skill>Locale</skill>
+      <skill>Perception</skill>
+      <skill>Sing</skill>
+      <skill>Willpower</skill>
+      <!-- PROFESSIONAL SKILLS -->
+      <skill>Commerce</skill>
+      <skill>Craft</skill>
+      <skill>Engineering</skill>
+      <skill>Lore</skill>
+      <skill>Mechanisms</skill>
+      <skill>Navigation</skill>
+      <skill>Survival</skill>
+    </skills>
+  </profession>
+  <profession>
+    <profession_name>Mystic</profession_name>
+    <profession_description>
+      Mystics are those who seek mastery of the world by the attain- ment of perfection, spiritual insight or by becoming inured to physi- cal discomfort. Depending on the culture from which they originate, mystics may be found as anything from reclusive mountaintop her- mits to respected teachers of martial or artistic schools. The path of their development is always via mastery of self, and most are sagacious as an result of their studies.
+    </profession_description>
+    <skills>
+      <!-- STANDARD SKILLS -->
+      <skill>Athletics</skill>
+      <skill>Endurance</skill>
+      <skill>Evade</skill>
+      <skill>Insight</skill>
+      <skill>Perception</skill>
+      <skill>Willpower</skill>
+      <skill>Combat Style</skill>
+      <!-- PROFESSIONAL SKILLS -->
+      <skill>Art</skill>
+      <skill>Folk Magic</skill>
+      <skill>Literacy</skill>
+      <skill>Lore</skill>
+      <skill>Meditation</skill>
+      <skill>Musicianship</skill>
+      <skill>Mysticism</skill>
+    </skills>
+  </profession>
+  <profession>
+    <profession_name>Official</profession_name>
+    <profession_description>
+      Officials are those appointed or elected to an office, charged with performing certain administrative duties and granted a degree of authority to ensure their commands are followed. Examples include slave managers of large estates, guild masters, bureaucratic scribes, legal advocates or tax collectors. Depending on the size and com- plexity of the organisation or government, most officials control a body of men to help perform their duties.
+    </profession_description>
+    <skills>
+      <!-- STANDARD SKILLS -->
+      <skill>Customs</skill>
+      <skill>Deceit</skill>
+      <skill>Influence</skill>
+      <skill>Insight</skill>
+      <skill>Locale</skill>
+      <skill>Perception</skill>
+      <skill>Willpower</skill>
+      <!-- PROFESSIONAL SKILLS -->
+      <skill>Bureaucracy</skill>
+      <skill>Commerce</skill>
+      <skill>Courtesy</skill>
+      <skill>Language</skill>
+      <skill>Literacy</skill>
+      <skill>Lore</skill>
+      <skill>Oratory</skill>
+    </skills>
+  </profession>
+  <profession>
+    <profession_name>Physician</profession_name>
+    <profession_description>
+      Physicians have detailed knowledge of how the body works, although they do not necessarily use that learning to heal. Some instead offer their skills to extract information by coercion, or fur- ther the depth of their education by questionable practices. A phy- sician can take many guises, some examples being the medicine man of a tribe with his totems and fetishes; a local hermit or wise woman with their knowledge of herbs and poultices; or a court phy- sician who can cure fevers and agues with complex chemical reme- dies. Depending on the sophistication of the culture, many doctors embellish their treatments with ceremonial theatrics, bogus medica- tions, and manipulative psychology.
+    </profession_description>
+    <skills>
+      <!-- STANDARD SKILLS -->
+      <skill>Dance</skill>
+      <skill>First Aid</skill>
+      <skill>Influence</skill>
+      <skill>Insight</skill>
+      <skill>Locale</skill>
+      <skill>Sing</skill>
+      <skill>Willpower</skill>
+      <!-- PROFESSIONAL SKILLS -->
+      <skill>Commerce</skill>
+      <skill>Craft</skill>
+      <skill>Healing</skill>
+      <skill>Language</skill>
+      <skill>Literacy</skill>
+      <skill>Lore</skill>
+      <skill>Streetwise</skill>
+    </skills>
+  </profession>
+  <profession>
+    <profession_name>Priest</profession_name>
+    <profession_description>
+      Priests can take a variety of different roles in society; an official leading worship of the gods, an illuminated seer leading followers on an exodus to find their god, an administrator in a theocracy, and so on. Priests do not necessarily need to be religious or even believe in the faith they serve, whilst others might be granted miracles from their deity to reward suitable propitiation.
+    </profession_description>
+    <skills>
+      <!-- STANDARD SKILLS -->
+      <skill>Customs</skill>
+      <skill>Dance</skill>
+      <skill>Deceit</skill>
+      <skill>Influence</skill>
+      <skill>Insight</skill>
+      <skill>Locale</skill>
+      <skill>Willpower</skill>
+      <!-- PROFESSIONAL SKILLS -->
+      <skill>Bureaucracy</skill>
+      <skill>Devotion</skill>
+      <skill>Exhort</skill>
+      <skill>Folk Magic</skill>
+      <skill>Literacy</skill>
+      <skill>Lore</skill>
+      <skill>Oratory</skill>
+    </skills>
+  </profession>
+  <profession>
+    <profession_name>Sailor</profession_name>
+    <profession_description>
+      Sailors and boatmen have a myriad of roles upon the lakes, riv- ers, and seas, from the simple crew of a trading ship to hardened convict rowers. Those sailors employed as professional raiders or marines are often given shipboard combat training. Wise to the ways of the waves, but superstitious with it, sailors are used to long dan- gerous travels, and the hardships that go with it.
+    </profession_description>
+    <skills>
+      <!-- STANDARD SKILLS -->
+      <skill>Athletics</skill>
+      <skill>Boating</skill>
+      <skill>Brawn</skill>
+      <skill>Endurance</skill>
+      <skill>Locale</skill>
+      <skill>Swim</skill>
+      <skill>Combat Style</skill>
+      <!-- PROFESSIONAL SKILLS -->
+      <skill>Craft</skill>
+      <skill>Culture</skill>
+      <skill>Language</skill>
+      <skill>Lore</skill>
+      <skill>Navigate</skill>
+      <skill>Seamanship</skill>
+      <skill>Survival</skill>
+    </skills>
+  </profession>
+  <profession>
+    <profession_name>Scholar</profession_name>
+    <profession_description>
+      The keepers and seekers of knowledge and learning, scholars and scribes are people who are fascinated by knowledge and the powers contained within it. Scholars are not necessarily confined to dusty libraries or suffocating scriptoriums; they may be active explorers and archivists, intent on advancing their learning or col- lections of tomes. Neither are they dependent on literacy to learn; some scholars memorise and hand down their knowledge orally. Some scholars are specialists in particular areas of knowledge, such as a lawspeaker who is employed to memorise and quote legal codes during law cases.
+    </profession_description>
+    <skills>
+      <!-- STANDARD SKILLS -->
+      <skill>Customs</skill>
+      <skill>Influence</skill>
+      <skill>Insight</skill>
+      <skill>Locale</skill>
+      <skill>Native Tongue</skill>
+      <skill>Perception</skill>
+      <skill>Willpower</skill>
+      <!-- PROFESSIONAL SKILLS -->
+      <skill>Culture</skill>
+      <skill>Language</skill>
+      <skill>Literacy</skill>
+      <skill>Lore</skill>
+      <skill>Lore</skill>
+      <skill>Oratory</skill>
+      <skill>Teach</skill>
+    </skills>
+  </profession>
+  <profession>
+    <profession_name>Scout</profession_name>
+    <profession_description>
+      Scouts are those who thrive beyond the reach of their native civilisation. They may be pioneers seeking out new territory or rangers employed by the military to keep an eye on the borders. Some are employed to seek out natural commodities which they sell to merchants of more settled lands, whilst others are hired to hunt down fugitives. A few are scholarly explorers, high ranked men seek- ing to document new cultures or simply folks cursed with chronic wanderlust. Hardened by their life, scouts often live from what the land provides, understanding the plants, animals and seasons of the wilderness they inhabit.
+    </profession_description>
+    <skills>
+      <!-- STANDARD SKILLS -->
+      <skill>Athletics</skill>
+      <skill>Endurance</skill>
+      <skill>First Aid</skill>
+      <skill>Perception</skill>
+      <skill>Stealth</skill>
+      <skill>Swim</skill>
+      <skill>Combat Style</skill>
+      <!-- PROFESSIONAL SKILLS -->
+      <skill>Culture</skill>
+      <skill>Healing</skill>
+      <skill>Language</skill>
+      <skill>Lore</skill>
+      <skill>Navigation</skill>
+      <skill>Survival</skill>
+      <skill>Track</skill>
+    </skills>
+  </profession>
+  <profession>
+    <profession_name>Shaman</profession_name>
+    <profession_description>
+      The medicine-man, the witch-doctor, the wise-woman: all can commune with the spirits and the ancestors; understanding the secrets of the spirit plane which lies over, under, and around the world we live in. The shaman has great insight and power, or so they would have you believe. Not all have magical powers, some merely follow the rituals and traditions handed down to them. Others are outright charlatans using trickery to fool the gullible members of their community. Despite the primitive associations, many civilised cultures also believe in the powers of the spirit world, propitiating dead ancestors for instance.
+    </profession_description>
+    <skills>
+      <!-- STANDARD SKILLS -->
+      <skill>Customs</skill>
+      <skill>Dance</skill>
+      <skill>Deceit</skill>
+      <skill>Influence</skill>
+      <skill>Insight</skill>
+      <skill>Locale</skill>
+      <skill>Willpower</skill>
+      <!-- PROFESSIONAL SKILLS -->
+      <skill>Binding</skill>
+      <skill>Folk Magic</skill>
+      <skill>Healing</skill>
+      <skill>Lore</skill>
+      <skill>Oratory</skill>
+      <skill>Sleight</skill>
+      <skill>Trance</skill>
+    </skills>
+  </profession>
+  <profession>
+    <profession_name>Sorcerer</profession_name>
+    <profession_description>
+      The dedicated practitioners of sorcery who seek to control the world around them through spells, incantations and rituals that are not necessarily tied to any gods or spirits, but directly alter the fab- ric of reality. A sorcerer is often fascinated by all aspects of magic, driven to master its subtleties, and discover lost incantations. Some gain their power from a lifetime of studying dusty tomes, whereas others might offer sacrifices to learn from the diabolic entities of for- bidden realms. A few are deceivers with no supernatural powers at all, using legerdemain and prestidigitation to fool others into paying them respect.
+    </profession_description>
+    <skills>
+      <!-- STANDARD SKILLS -->
+      <skill>Customs</skill>
+      <skill>Deceit</skill>
+      <skill>Influence</skill>
+      <skill>Insight</skill>
+      <skill>Locale</skill>
+      <skill>Perception</skill>
+      <skill>Willpower</skill>
+      <!-- PROFESSIONAL SKILLS -->
+      <skill>Folk Magic</skill>
+      <skill>Invocation</skill>
+      <skill>Language</skill>
+      <skill>Literacy</skill>
+      <skill>Lore</skill>
+      <skill>Shaping</skill>
+      <skill>Sleight</skill>
+    </skills>
+  </profession>
+  <profession>
+    <profession_name>Thief</profession_name>
+    <profession_description>
+      Thieves are those who delight in stealing, or are forced to steal from others to support themselves. They range from petty criminals who mug or pickpocket folk on the streets, to gang leaders and gold- en-tongued swindlers. Whilst thieves thrive in urban environments they also exist in less civilised cultures too, operating as outlawed brigands, and raiders of neighbouring tribes. Some thieves specialise in tomb robbing, stealing the grave goods of the dead. A few inde- pendently wealthy cutpurses and burglars are simply bored individ- uals who thieve for adventurous excitement.
+    </profession_description>
+    <skills>
+      <!-- STANDARD SKILLS -->
+      <skill>Athletics</skill>
+      <skill>Deceit</skill>
+      <skill>Evade</skill>
+      <skill>Insight</skill>
+      <skill>Perception</skill>
+      <skill>Stealth</skill>
+      <skill>Combat Style</skill>
+      <!-- PROFESSIONAL SKILLS -->
+      <skill>Acting</skill>
+      <skill>Commerce</skill>
+      <skill>Disguise</skill>
+      <skill>Lockpicking</skill>
+      <skill>Mechanisms</skill>
+      <skill>Sleight</skill>
+      <skill>Streetwise</skill>
+    </skills>
+  </profession>
+  <profession>
+    <profession_name>Warrior</profession_name>
+    <profession_description>
+      Professional soldiers are the warrior class of a community; this is the career of the fighting man. Most of their time is spent patrolling, guarding and training – focusing on the use of weapons, close-quar- ter tactics, and the study of enemy styles to make the most of any future opportunities. The warrior may or may not follow a partic- ular martial code, and similarly he might focus on finesse or simple brute-force.
+    </profession_description>
+    <skills>
+      <!-- STANDARD SKILLS -->
+      <skill>Athletics</skill>
+      <skill>Brawn</skill>
+      <skill>Endurance</skill>
+      <skill>Evade</skill>
+      <skill>Unarmed</skill>
+      <skill>Combat Style</skill>
+      <skill>Combat Style</skill>
+      <!-- PROFESSIONAL SKILLS -->
+      <skill>Craft</skill>
+      <skill>Engineering</skill>
+      <skill>Gambling</skill>
+      <skill>Lore</skill>
+      <skill>Lore</skill>
+      <skill>Oratory</skill>
+      <skill>Survival</skill>
+    </skills>
+  </profession>
 </profession_list>
