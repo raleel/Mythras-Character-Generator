@@ -75,6 +75,36 @@
   </skill>
   
   <skill>
+    <skill_name>Endurance</skill_name>
+    <skill_type>Standard</skill_type>
+    <skill_first_stat>CON</skill_first_stat>
+    <skill_second_stat>CON</skill_second_stat>
+    <skill_description>
+      
+    </skill_description>
+  </skill>
+    
+  <skill>
+    <skill_name>Evade</skill_name>
+    <skill_type>Standard</skill_type>
+    <skill_first_stat>DEX</skill_first_stat>
+    <skill_second_stat>DEX</skill_second_stat>
+    <skill_description>
+      
+    </skill_description>
+  </skill>
+    
+  <skill>
+    <skill_name>First Aid</skill_name>
+    <skill_type>Standard</skill_type>
+    <skill_first_stat>INT</skill_first_stat>
+    <skill_second_stat>DEX</skill_second_stat>
+    <skill_description>
+      
+    </skill_description>
+  </skill>
+  
+  <skill>
     <skill_name>Influence</skill_name>
     <skill_type>Standard</skill_type>
     <skill_first_stat>CHA</skill_first_stat>
@@ -103,7 +133,77 @@
       
     </skill_description>
   </skill>
-
+    
+  <skill>
+    <skill_name>Native Tongue</skill_name>
+    <skill_type>Standard</skill_type>
+    <skill_first_stat>INT</skill_first_stat>
+    <skill_second_stat>CHA</skill_second_stat>
+    <skill_description>
+      
+    </skill_description>
+  </skill>
+    
+  <skill>
+    <skill_name>Perception</skill_name>
+    <skill_type>Standard</skill_type>
+    <skill_first_stat>INT</skill_first_stat>
+    <skill_second_stat>POW</skill_second_stat>
+    <skill_description>
+      
+    </skill_description>
+  </skill>
+    
+  <skill>
+    <skill_name>Ride</skill_name>
+    <skill_type>Standard</skill_type>
+    <skill_first_stat>DEX</skill_first_stat>
+    <skill_second_stat>POW</skill_second_stat>
+    <skill_description>
+      
+    </skill_description>
+  </skill>
+    
+  <skill>
+    <skill_name>Sing</skill_name>
+    <skill_type>Standard</skill_type>
+    <skill_first_stat>CHA</skill_first_stat>
+    <skill_second_stat>POW</skill_second_stat>
+    <skill_description>
+      
+    </skill_description>
+  </skill>
+    
+  <skill>
+    <skill_name>Stealth</skill_name>
+    <skill_type>Standard</skill_type>
+    <skill_first_stat>DEX</skill_first_stat>
+    <skill_second_stat>INT</skill_second_stat>
+    <skill_description>
+      
+    </skill_description>
+  </skill>
+    
+  <skill>
+    <skill_name>Swim</skill_name>
+    <skill_type>Standard</skill_type>
+    <skill_first_stat>STR</skill_first_stat>
+    <skill_second_stat>CON</skill_second_stat>
+    <skill_description>
+      
+    </skill_description>
+  </skill>
+    
+  <skill>
+    <skill_name>Unarmed</skill_name>
+    <skill_type>Standard</skill_type>
+    <skill_first_stat>STR</skill_first_stat>
+    <skill_second_stat>DEX</skill_second_stat>
+    <skill_description>
+      
+    </skill_description>
+  </skill>
+  
   <skill>
     <skill_name>Willpower</skill_name>
     <skill_type>Standard</skill_type>
@@ -115,6 +215,27 @@
   </skill>
 
   <!-- PROFESSIONAL SKILLS -->
+      
+  <skill>
+    <skill_name>Acting</skill_name>
+    <skill_type>Professional</skill_type>
+    <skill_first_stat>CHA</skill_first_stat>
+    <skill_second_stat>CHA</skill_second_stat>
+    <skill_description>
+      
+    </skill_description>
+  </skill>
+  
+  <skill>
+    <skill_name>Acrobatics</skill_name>
+    <skill_type>Professional</skill_type>
+    <skill_first_stat>STR</skill_first_stat>
+    <skill_second_stat>DEX</skill_second_stat>
+    <skill_description>
+      
+    </skill_description>
+  </skill>
+  
   <skill>
     <skill_name>Art</skill_name>
     <skill_type>Professional</skill_type>
@@ -124,7 +245,27 @@
       
     </skill_description>
   </skill>
-  
+    
+  <skill>
+    <skill_name>Binding</skill_name>
+    <skill_type>Professional</skill_type>
+    <skill_first_stat>POW</skill_first_stat>
+    <skill_second_stat>CHA</skill_second_stat>
+    <skill_description>
+      
+    </skill_description>
+  </skill>
+    
+  <skill>
+    <skill_name>Bureaucracy</skill_name>
+    <skill_type>Professional</skill_type>
+    <skill_first_stat>INT</skill_first_stat>
+    <skill_second_stat>INT</skill_second_stat>
+    <skill_description>
+      
+    </skill_description>
+  </skill>
+    
   <skill>
     <skill_name>Commerce</skill_name>
     <skill_type>Professional</skill_type>
@@ -134,7 +275,17 @@
       
     </skill_description>
   </skill>
-
+    
+  <skill>
+    <skill_name>Courtesy</skill_name>
+    <skill_type>Professional</skill_type>
+    <skill_first_stat>INT</skill_first_stat>
+    <skill_second_stat>CHA</skill_second_stat>
+    <skill_description>
+      
+    </skill_description>
+  </skill>
+    
   <skill>
     <skill_name>Craft</skill_name>
     <skill_type>Professional</skill_type>
@@ -146,7 +297,27 @@
   </skill>
   
   <skill>
-    <skill_name>Courtesy</skill_name>
+    <skill_name>Culture</skill_name>
+    <skill_type>Professional</skill_type>
+    <skill_first_stat>INT</skill_first_stat>
+    <skill_second_stat>INT</skill_second_stat>
+    <skill_description>
+      
+    </skill_description>
+  </skill>
+    
+  <skill>
+    <skill_name>Devotion</skill_name>
+    <skill_type>Professional</skill_type>
+    <skill_first_stat>POW</skill_first_stat>
+    <skill_second_stat>CHA</skill_second_stat>
+    <skill_description>
+      
+    </skill_description>
+  </skill>
+    
+  <skill>
+    <skill_name>Disguise</skill_name>
     <skill_type>Professional</skill_type>
     <skill_first_stat>INT</skill_first_stat>
     <skill_second_stat>CHA</skill_second_stat>
@@ -154,7 +325,67 @@
       
     </skill_description>
   </skill>
-  
+    
+  <skill>
+    <skill_name>Engineering</skill_name>
+    <skill_type>Professional</skill_type>
+    <skill_first_stat>INT</skill_first_stat>
+    <skill_second_stat>INT</skill_second_stat>
+    <skill_description>
+      
+    </skill_description>
+  </skill>
+    
+  <skill>
+    <skill_name>Exhort</skill_name>
+    <skill_type>Professional</skill_type>
+    <skill_first_stat>INT</skill_first_stat>
+    <skill_second_stat>CHA</skill_second_stat>
+    <skill_description>
+      
+    </skill_description>
+  </skill>
+    
+  <skill>
+    <skill_name>Folk Magic</skill_name>
+    <skill_type>Professional</skill_type>
+    <skill_first_stat>POW</skill_first_stat>
+    <skill_second_stat>CHA</skill_second_stat>
+    <skill_description>
+      
+    </skill_description>
+  </skill>
+    
+  <skill>
+    <skill_name>Gambling</skill_name>
+    <skill_type>Professional</skill_type>
+    <skill_first_stat>INT</skill_first_stat>
+    <skill_second_stat>POW</skill_second_stat>
+    <skill_description>
+      
+    </skill_description>
+  </skill>
+    
+  <skill>
+    <skill_name>Healing</skill_name>
+    <skill_type>Professional</skill_type>
+    <skill_first_stat>INT</skill_first_stat>
+    <skill_second_stat>POW</skill_second_stat>
+    <skill_description>
+      
+    </skill_description>
+  </skill>
+    
+  <skill>
+    <skill_name>Invocation</skill_name>
+    <skill_type>Professional</skill_type>
+    <skill_first_stat>INT</skill_first_stat>
+    <skill_second_stat>INT</skill_second_stat>
+    <skill_description>
+      
+    </skill_description>
+  </skill>
+                  
   <skill>
     <skill_name>Language</skill_name>
     <skill_type>Professional</skill_type>
@@ -164,7 +395,27 @@
       
     </skill_description>
   </skill>
-  
+    
+  <skill>
+    <skill_name>Literacy</skill_name>
+    <skill_type>Professional</skill_type>
+    <skill_first_stat>INT/skill_first_stat>
+    <skill_second_stat>INT</skill_second_stat>
+    <skill_description>
+      
+    </skill_description>
+  </skill>
+    
+  <skill>
+    <skill_name>Lockpicking</skill_name>
+    <skill_type>Professional</skill_type>
+    <skill_first_stat>DEX/skill_first_stat>
+    <skill_second_stat>DEX</skill_second_stat>
+    <skill_description>
+      
+    </skill_description>
+  </skill>
+      
   <skill>
     <skill_name>Lore</skill_name>
     <skill_type>Professional</skill_type>
@@ -174,7 +425,27 @@
       
     </skill_description>
   </skill>
-  
+    
+  <skill>
+    <skill_name>Mechanisms</skill_name>
+    <skill_type>Professional</skill_type>
+    <skill_first_stat>DEX</skill_first_stat>
+    <skill_second_stat>INT</skill_second_stat>
+    <skill_description>
+      
+    </skill_description>
+  </skill>
+    
+  <skill>
+    <skill_name>Meditation</skill_name>
+    <skill_type>Professional</skill_type>
+    <skill_first_stat>INT</skill_first_stat>
+    <skill_second_stat>CON</skill_second_stat>
+    <skill_description>
+      
+    </skill_description>
+  </skill>
+      
   <skill>
     <skill_name>Musicianship</skill_name>
     <skill_type>Professional</skill_type>
@@ -184,7 +455,77 @@
       
     </skill_description>
   </skill>
-  
+    
+  <skill>
+    <skill_name>Mysticism</skill_name>
+    <skill_type>Professional</skill_type>
+    <skill_first_stat>POW</skill_first_stat>
+    <skill_second_stat>CON</skill_second_stat>
+    <skill_description>
+      
+    </skill_description>
+  </skill>
+    
+  <skill>
+    <skill_name>Navigation</skill_name>
+    <skill_type>Professional</skill_type>
+    <skill_first_stat>INT</skill_first_stat>
+    <skill_second_stat>POW</skill_second_stat>
+    <skill_description>
+      
+    </skill_description>
+  </skill>
+    
+  <skill>
+    <skill_name>Oratory</skill_name>
+    <skill_type>Professional</skill_type>
+    <skill_first_stat>POW</skill_first_stat>
+    <skill_second_stat>CHA</skill_second_stat>
+    <skill_description>
+      
+    </skill_description>
+  </skill>
+    
+  <skill>
+    <skill_name>Seamanship</skill_name>
+    <skill_type>Professional</skill_type>
+    <skill_first_stat>INT</skill_first_stat>
+    <skill_second_stat>CON</skill_second_stat>
+    <skill_description>
+      
+    </skill_description>
+  </skill>
+    
+  <skill>
+    <skill_name>Seduction</skill_name>
+    <skill_type>Professional</skill_type>
+    <skill_first_stat>INT</skill_first_stat>
+    <skill_second_stat>CHA</skill_second_stat>
+    <skill_description>
+      
+    </skill_description>
+  </skill>
+    
+  <skill>
+    <skill_name>Shaping</skill_name>
+    <skill_type>Professional</skill_type>
+    <skill_first_stat>INT</skill_first_stat>
+    <skill_second_stat>POW</skill_second_stat>
+    <skill_description>
+      
+    </skill_description>
+  </skill>
+    
+  <skill>
+    <skill_name>Sleight</skill_name>
+    <skill_type>Professional</skill_type>
+    <skill_first_stat>DEX</skill_first_stat>
+    <skill_second_stat>CHA</skill_second_stat>
+    <skill_description>
+      
+    </skill_description>
+  </skill>
+                
   <skill>
     <skill_name>Streetwise</skill_name>
     <skill_type>Professional</skill_type>
@@ -194,4 +535,45 @@
       
     </skill_description>
   </skill>
+    
+  <skill>
+    <skill_name>Survival</skill_name>
+    <skill_type>Professional</skill_type>
+    <skill_first_stat>CON</skill_first_stat>
+    <skill_second_stat>POW</skill_second_stat>
+    <skill_description>
+      
+    </skill_description>
+  </skill>
+    
+  <skill>
+    <skill_name>Teach</skill_name>
+    <skill_type>Professional</skill_type>
+    <skill_first_stat>INT</skill_first_stat>
+    <skill_second_stat>CHA</skill_second_stat>
+    <skill_description>
+      
+    </skill_description>
+  </skill>
+    
+  <skill>
+    <skill_name>Track</skill_name>
+    <skill_type>Professional</skill_type>
+    <skill_first_stat>INT</skill_first_stat>
+    <skill_second_stat>CON</skill_second_stat>
+    <skill_description>
+      
+    </skill_description>
+  </skill>
+    
+  <skill>
+    <skill_name>Trance</skill_name>
+    <skill_type>Professional</skill_type>
+    <skill_first_stat>POW</skill_first_stat>
+    <skill_second_stat>CON</skill_second_stat>
+    <skill_description>
+      
+    </skill_description>
+  </skill>
+          
 </skill_list>
