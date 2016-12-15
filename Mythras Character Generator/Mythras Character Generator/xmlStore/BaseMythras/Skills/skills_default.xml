@@ -12,7 +12,18 @@
     </skill_description>
   </skill>
   -->
-
+  
+  <!-- COMBAT STYLE -->
+  <skill>
+    <skill_name>Combat Style</skill_name>
+    <skill_type>Standard</skill_type>
+    <skill_first_stat>STR</skill_first_stat>
+    <skill_second_stat>DEX</skill_second_stat>
+    <skill_description>
+      
+    </skill_description>
+  </skill>
+  
   <!-- STANDARD SKILLS -->
   <skill>
     <skill_name>Athletics</skill_name>
