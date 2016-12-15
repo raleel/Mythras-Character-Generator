@@ -792,6 +792,7 @@
             this.nextButton.TabIndex = 5;
             this.nextButton.Text = "NEXT";
             this.nextButton.UseVisualStyleBackColor = true;
+            this.nextButton.Click += new System.EventHandler(this.nextButton_Click);
             // 
             // raceInfoBox
             // 

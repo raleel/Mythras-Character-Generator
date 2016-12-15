@@ -34,7 +34,7 @@ namespace Mythras_Character_Generator
 
         public void getVisibleProfessions()
         {
-            string cultureName = this.cultureTypeLayoutPanel.Controls.OfType<RadioButton>().FirstOrDefault(r => r.Checked).Text;
+            string cultureName = getCheckedCivilisationTypeText();
             Dictionary<int, string> professionNames = sis.getCultureTypeProfessions(cultureName);
             foreach (RadioButton button in professionButtons)
             {
@@ -44,13 +44,15 @@ namespace Mythras_Character_Generator
             {
                 foreach (KeyValuePair<int, string> entry in professionNames)
                 {
-                    if (entry.Key == 1)
-                    {
-                        button.Checked = true;
-                    }
+                    
                     if (button.Text == entry.Value)
                     {
                         button.Visible = true;
+                        if (entry.Key == 1)
+                        {
+                            button.Checked = true;
+                            professionInfoText.Text = sis.getProfessionInformation(button.Text);
+                        }
                     }
                 }
             }
@@ -96,36 +98,39 @@ namespace Mythras_Character_Generator
         public void initialiseProfessions()
         {
             Dictionary<int, string> professionNames = sis.getAllProfessionNames();
-            for (int i = 1; i < professionNames.Count + 1; i++)
+            int i = 1;
+            RadioButton firstButton = new RadioButton();
+            firstButton.Text = professionNames[i];
+            firstButton.Click += new EventHandler(professionButtonClick);
+            professionButtons.Add(firstButton);
+            this.professionLayoutPanel.Controls.Add(firstButton);
+            firstButton.Checked = true;
+            professionInfoText.Text = sis.getProfessionInformation(professionNames[i]);
+            for (i = 2; i < professionNames.Count + 1; i++)
             {
                 RadioButton newButton = new RadioButton();
                 newButton.Text = professionNames[i];
                 newButton.Click += new EventHandler(professionButtonClick);
                 professionButtons.Add(newButton);
                 this.professionLayoutPanel.Controls.Add(newButton);
-                if (i == 1)
-                {
-                    newButton.Checked = true;
-                    professionInfoText.Text = sis.getProfessionInformation(professionNames[i]);
-                }
             }
         }
 
         public void raceButtonClick(object Sender, EventArgs e)
         {
-            string raceName = this.raceLayoutPanel.Controls.OfType<RadioButton>().FirstOrDefault(r => r.Checked).Text;
+            string raceName = getCheckedRaceText();
         }
 
         public void cultureButtonClick(object sender, EventArgs e)
         {
-            string cultureName = this.cultureTypeLayoutPanel.Controls.OfType<RadioButton>().FirstOrDefault(r => r.Checked).Text;
+            string cultureName = getCheckedCivilisationTypeText();
             cultureTypeInfoText.Text = sis.getCultureTypeInformation(cultureName);
             getVisibleProfessions();
         }
 
         public void professionButtonClick(object sender, EventArgs e)
         {
-            string professionName = this.professionLayoutPanel.Controls.OfType<RadioButton>().FirstOrDefault(r => r.Checked).Text;
+            string professionName = getCheckedProfessionText();
             professionInfoText.Text = sis.getProfessionInformation(professionName);
         }
 
@@ -183,6 +188,94 @@ namespace Mythras_Character_Generator
         private void chaUpDown_ValueChanged(object sender, EventArgs e)
         {
             recalculateTotal();
+        }
+
+        private void nextButton_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            BaseMythrasSkillsForm frm = new BaseMythrasSkillsForm(sis, getCheckedRaceText(), 
+                getCheckedCivilisationTypeText(), getCheckedProfessionText(), getStatValue("STR"), 
+                getStatValue("CON"), getStatValue("SIZ"), getStatValue("DEX"), getStatValue("INT"), 
+                getStatValue("POW"), getStatValue("CHA"));
+            frm.Show();
+            frm.FormClosed += (s, args) => this.Close();
+        }
+
+        public int getStatValue(string stat)
+        {
+            stat = stat.ToUpper();
+            switch (stat)
+            {
+                case "STRENGTH":
+                    return Convert.ToInt32(strUpDown.Value);
+                    break;
+                case "STR":
+                    return Convert.ToInt32(strUpDown.Value);
+                    break;
+                case "CONSTITUTION":
+                    return Convert.ToInt32(conUpDown.Value);
+                    break;
+                case "CON":
+                    return Convert.ToInt32(conUpDown.Value);
+                    break;
+                case "SIZE":
+                    return Convert.ToInt32(sizUpDown.Value);
+                    break;
+                case "SIZ":
+                    return Convert.ToInt32(sizUpDown.Value);
+                    break;
+                case "DEXTERITY":
+                    return Convert.ToInt32(dexUpDown.Value);
+                    break;
+                case "DEX":
+                    return Convert.ToInt32(dexUpDown.Value);
+                    break;
+                case "INTELLIGENCE":
+                    return Convert.ToInt32(intUpDown.Value);
+                    break;
+                case "INT":
+                    return Convert.ToInt32(intUpDown.Value);
+                    break;
+                case "POWER":
+                    return Convert.ToInt32(powUpDown.Value);
+                    break;
+                case "POW":
+                    return Convert.ToInt32(powUpDown.Value);
+                    break;
+                case "CHARISMA":
+                    return Convert.ToInt32(chaUpDown.Value);
+                    break;
+                case "CHA":
+                    return Convert.ToInt32(chaUpDown.Value);
+                    break;
+                default:
+                    return 100;
+                    break;
+            }
+        }
+
+        /**
+         * Unified way to get text from a selected FlowLayoutPanel.
+         */
+        private string getTextCheckedButton(FlowLayoutPanel flp)
+        {
+            string text = flp.Controls.OfType<RadioButton>().FirstOrDefault(r => r.Checked).Text;
+            return text;
+        }
+
+        public string getCheckedCivilisationTypeText()
+        {
+            return getTextCheckedButton(this.cultureTypeLayoutPanel);
+        }
+
+        public string getCheckedRaceText()
+        {
+            return getTextCheckedButton(this.raceLayoutPanel);
+        }
+
+        public string getCheckedProfessionText()
+        {
+            return getTextCheckedButton(this.professionLayoutPanel);
         }
     }
 }

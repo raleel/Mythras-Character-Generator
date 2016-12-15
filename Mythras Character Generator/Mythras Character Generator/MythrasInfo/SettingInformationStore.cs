@@ -302,6 +302,14 @@ namespace Mythras_Character_Generator.MythrasInfo
             return raceNames;
         }
 
+        public Dictionary<int, string> getSkillStats(string skillName)
+        {
+            Dictionary<int, string> skillStats = new Dictionary<int, string>();
+            skillStats.Add(1, skills[skillName].getStat(1));
+            skillStats.Add(2, skills[skillName].getStat(2));
+            return skillStats;
+        }
+
         /**
          * Test method for adding races.
          */

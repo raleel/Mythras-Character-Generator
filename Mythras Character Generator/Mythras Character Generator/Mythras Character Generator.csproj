@@ -52,6 +52,12 @@
     <Compile Include="BaseMythrasSelectForm.Designer.cs">
       <DependentUpon>BaseMythrasSelectForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="BaseMythrasSkillsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseMythrasSkillsForm.Designer.cs">
+      <DependentUpon>BaseMythrasSkillsForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainMenu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -67,6 +73,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="BaseMythrasSelectForm.resx">
       <DependentUpon>BaseMythrasSelectForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseMythrasSkillsForm.resx">
+      <DependentUpon>BaseMythrasSkillsForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainMenu.resx">
       <DependentUpon>MainMenu.cs</DependentUpon>
