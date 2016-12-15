@@ -13,11 +13,13 @@ namespace Mythras_Character_Generator.MythrasInfo
     {
         string cultureTypeName;
         Dictionary<string, Skill> cultureSkills;
+        Dictionary<string, Profession> cultureProfessions;
 
         public CultureType(string cultureTypeName)
         {
             this.cultureTypeName = cultureTypeName;
             cultureSkills = new Dictionary<string, Skill>();
+            cultureProfessions = new Dictionary<string, Profession>();
         }
 
         public string getCultureTypeName()
@@ -32,6 +34,24 @@ namespace Mythras_Character_Generator.MythrasInfo
         {
             cultureSkills.Add(skill.getSkillName(), skill);
         } 
+
+        public void addCultureTypeProfession(Profession profession)
+        {
+            cultureProfessions.Add(profession.getProfessionName(), profession);
+        }
+
+        public Dictionary<int, string> getCultureTypeProfessions()
+        {
+            Dictionary<int, string> professionNames = new Dictionary<int, string>();
+            int i = 1;
+            foreach (KeyValuePair<string, Profession> entry in cultureProfessions)
+            {
+                professionNames.Add(i, entry.Key);
+                i++;
+            }
+
+            return professionNames;
+        }
 
         public override string ToString()
         {

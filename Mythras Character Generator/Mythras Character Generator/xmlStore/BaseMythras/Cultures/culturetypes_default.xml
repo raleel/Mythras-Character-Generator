@@ -30,6 +30,9 @@
 			<skill>Musicianship</skill>
 			<skill>Streetwise</skill>
 		</culture_type_skills>
+    <culture_type_professions>
+      <profession>Agent</profession>
+    </culture_type_professions>
 	</culture_type>
 
   <culture_type>

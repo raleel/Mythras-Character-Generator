@@ -14,20 +14,52 @@ namespace Mythras_Character_Generator
     public partial class BaseMythrasSelectForm : Form
     {
         SettingInformationStore sis;
-        Dictionary<int, string> raceNames;
+        List<RadioButton> raceButtons;
+        List<RadioButton> professionButtons;
+        List<RadioButton> cultureButtons;
+        
         public BaseMythrasSelectForm()
         {
             InitializeComponent();
             sis = new SettingInformationStore();
+
+            raceButtons = new List<RadioButton>();
+            professionButtons = new List<RadioButton>();
+            cultureButtons = new List<RadioButton>();
+            
             initialiseRaces();
-            initialiseCultures();
             initialiseProfessions();
+            initialiseCultures();
+        }
+
+        public void getVisibleProfessions()
+        {
+            string cultureName = this.cultureTypeLayoutPanel.Controls.OfType<RadioButton>().FirstOrDefault(r => r.Checked).Text;
+            Dictionary<int, string> professionNames = sis.getCultureTypeProfessions(cultureName);
+            foreach (RadioButton button in professionButtons)
+            {
+                button.Visible = false;
+            }
+            foreach (RadioButton button in professionButtons)
+            {
+                foreach (KeyValuePair<int, string> entry in professionNames)
+                {
+                    if (entry.Key == 1)
+                    {
+                        button.Checked = true;
+                    }
+                    if (button.Text == entry.Value)
+                    {
+                        button.Visible = true;
+                    }
+                }
+            }
+
         }
 
         public void initialiseRaces()
         {
-            raceNames = sis.getAllRaceNames();
-            List<RadioButton> raceButtons = new List<RadioButton>();
+            Dictionary<int, string> raceNames = sis.getAllRaceNames();
             for (int i = 1; i < raceNames.Count + 1; i++)
             {
                 RadioButton newButton = new RadioButton();
@@ -45,8 +77,6 @@ namespace Mythras_Character_Generator
         public void initialiseCultures()
         {
             Dictionary<int, string> cultureNames = sis.getAllCultureNames();
-
-            List<RadioButton> cultureButtons = new List<RadioButton>();
             for (int i = 1; i < cultureNames.Count + 1; i++)
             {
                 RadioButton newButton = new RadioButton();
@@ -58,6 +88,7 @@ namespace Mythras_Character_Generator
                 {
                     newButton.Checked = true;
                     cultureTypeInfoText.Text = sis.getCultureTypeInformation(cultureNames[i]);
+                    getVisibleProfessions();
                 }
             }
         }
@@ -65,8 +96,6 @@ namespace Mythras_Character_Generator
         public void initialiseProfessions()
         {
             Dictionary<int, string> professionNames = sis.getAllProfessionNames();
-
-            List<RadioButton> professionButtons = new List<RadioButton>();
             for (int i = 1; i < professionNames.Count + 1; i++)
             {
                 RadioButton newButton = new RadioButton();
@@ -91,6 +120,7 @@ namespace Mythras_Character_Generator
         {
             string cultureName = this.cultureTypeLayoutPanel.Controls.OfType<RadioButton>().FirstOrDefault(r => r.Checked).Text;
             cultureTypeInfoText.Text = sis.getCultureTypeInformation(cultureName);
+            getVisibleProfessions();
         }
 
         public void professionButtonClick(object sender, EventArgs e)
@@ -114,9 +144,45 @@ namespace Mythras_Character_Generator
 
         }
 
-        private void numericUpDown2_ValueChanged(object sender, EventArgs e)
+        private void recalculateTotal()
         {
+            decimal total = strUpDown.Value + conUpDown.Value + sizUpDown.Value + dexUpDown.Value + intUpDown.Value + powUpDown.Value + chaUpDown.Value;
+            totalNum.Text = total.ToString();
+        }
 
+        private void strUpDown_ValueChanged(object sender, EventArgs e)
+        {
+            recalculateTotal();
+        }
+
+        private void conUpDown_ValueChanged(object sender, EventArgs e)
+        {
+            recalculateTotal();
+        }
+
+        private void sizUpDown_ValueChanged(object sender, EventArgs e)
+        {
+            recalculateTotal();
+        }
+
+        private void dexUpDown_ValueChanged(object sender, EventArgs e)
+        {
+            recalculateTotal();
+        }
+
+        private void intUpDown_ValueChanged(object sender, EventArgs e)
+        {
+            recalculateTotal();
+        }
+
+        private void powUpDown_ValueChanged(object sender, EventArgs e)
+        {
+            recalculateTotal();
+        }
+
+        private void chaUpDown_ValueChanged(object sender, EventArgs e)
+        {
+            recalculateTotal();
         }
     }
 }

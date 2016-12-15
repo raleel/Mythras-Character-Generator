@@ -26,6 +26,11 @@ namespace Mythras_Character_Generator.MythrasInfo
             readCultureTypesFromXML("..\\..\\xmlStore\\BaseMythras\\Cultures\\culturetypes_default.xml");
         }
 
+        public Dictionary<int, string> getCultureTypeProfessions(string cultureTypeName)
+        {
+            return cultureTypes[cultureTypeName].getCultureTypeProfessions();
+        }
+
         /**
          * Reads culture types from a given XML file.
          */
@@ -103,6 +108,7 @@ namespace Mythras_Character_Generator.MythrasInfo
                     {
                         string cultureTypeName = "";
                         Dictionary<string, Skill> cultureSkills = new Dictionary<string, Skill>();
+                        Dictionary<string, Profession> cultureProfessions = new Dictionary<string, Profession>();
                         while (reader.Read() && reader.Name != "culture_type")
                         {
                             switch (reader.Name)
@@ -122,6 +128,18 @@ namespace Mythras_Character_Generator.MythrasInfo
                                     }
                                     while (reader.Read() && reader.NodeType != XmlNodeType.EndElement) ;
                                     break;
+                                case "profession":
+                                    reader.Read();
+                                    try
+                                    {
+                                        cultureProfessions.Add(professions[reader.Value].getProfessionName(), professions[reader.Value]);
+                                    }
+                                    catch (KeyNotFoundException ke)
+                                    {
+                                        Console.WriteLine("No profession of name " + reader.Value + " found whilst parsing culture type " + cultureTypeName + ".");
+                                    }
+                                    while (reader.Read() && reader.NodeType != XmlNodeType.EndElement) ;
+                                    break;
 
                             }
                         }
@@ -129,6 +147,10 @@ namespace Mythras_Character_Generator.MythrasInfo
                         foreach (KeyValuePair<string, Skill> entry in cultureSkills)
                         {
                             cultureType.addCultureTypeSkill(entry.Value);
+                        }
+                        foreach (KeyValuePair<string, Profession> entry in cultureProfessions)
+                        {
+                            cultureType.addCultureTypeProfession(entry.Value);
                         }
                         addCultureType(cultureType);                            
                     }

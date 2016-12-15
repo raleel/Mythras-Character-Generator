@@ -39,37 +39,37 @@
             this.totalNum = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
             this.panel8 = new System.Windows.Forms.Panel();
-            this.numericUpDown7 = new System.Windows.Forms.NumericUpDown();
+            this.chaUpDown = new System.Windows.Forms.NumericUpDown();
             this.minChaLabel = new System.Windows.Forms.Label();
             this.chaLabel = new System.Windows.Forms.Label();
             this.maxChaLabel = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.numericUpDown6 = new System.Windows.Forms.NumericUpDown();
+            this.powUpDown = new System.Windows.Forms.NumericUpDown();
             this.minPowLabel = new System.Windows.Forms.Label();
             this.powLabel = new System.Windows.Forms.Label();
             this.maxPowLabel = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.numericUpDown5 = new System.Windows.Forms.NumericUpDown();
+            this.intUpDown = new System.Windows.Forms.NumericUpDown();
             this.minIntLabel = new System.Windows.Forms.Label();
             this.intLabel = new System.Windows.Forms.Label();
             this.maxIntLabel = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.numericUpDown4 = new System.Windows.Forms.NumericUpDown();
+            this.dexUpDown = new System.Windows.Forms.NumericUpDown();
             this.minDexLabel = new System.Windows.Forms.Label();
             this.dexLabel = new System.Windows.Forms.Label();
             this.maxDexLabel = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.numericUpDown3 = new System.Windows.Forms.NumericUpDown();
+            this.sizUpDown = new System.Windows.Forms.NumericUpDown();
             this.minSizLabel = new System.Windows.Forms.Label();
             this.sizLabel = new System.Windows.Forms.Label();
             this.maxSizLabel = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.conUpDown = new System.Windows.Forms.NumericUpDown();
             this.minConLabel = new System.Windows.Forms.Label();
             this.conLabel = new System.Windows.Forms.Label();
             this.maxConLabel = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
+            this.strUpDown = new System.Windows.Forms.NumericUpDown();
             this.minStrLabel = new System.Windows.Forms.Label();
             this.strengthLabel = new System.Windows.Forms.Label();
             this.maxStrLabel = new System.Windows.Forms.Label();
@@ -92,19 +92,19 @@
             this.statsBox.SuspendLayout();
             this.totalPanel.SuspendLayout();
             this.panel8.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chaUpDown)).BeginInit();
             this.panel7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.powUpDown)).BeginInit();
             this.panel6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.intUpDown)).BeginInit();
             this.panel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dexUpDown)).BeginInit();
             this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sizUpDown)).BeginInit();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.conUpDown)).BeginInit();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.strUpDown)).BeginInit();
             this.statFieldsPanel.SuspendLayout();
             this.raceInfoBox.SuspendLayout();
             this.cultureTypeInfoBox.SuspendLayout();
@@ -223,7 +223,7 @@
             // 
             // panel8
             // 
-            this.panel8.Controls.Add(this.numericUpDown7);
+            this.panel8.Controls.Add(this.chaUpDown);
             this.panel8.Controls.Add(this.minChaLabel);
             this.panel8.Controls.Add(this.chaLabel);
             this.panel8.Controls.Add(this.maxChaLabel);
@@ -233,29 +233,30 @@
             this.panel8.Size = new System.Drawing.Size(222, 30);
             this.panel8.TabIndex = 7;
             // 
-            // numericUpDown7
+            // chaUpDown
             // 
-            this.numericUpDown7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDown7.Location = new System.Drawing.Point(95, 5);
-            this.numericUpDown7.Maximum = new decimal(new int[] {
+            this.chaUpDown.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chaUpDown.Location = new System.Drawing.Point(95, 5);
+            this.chaUpDown.Maximum = new decimal(new int[] {
             18,
             0,
             0,
             0});
-            this.numericUpDown7.Minimum = new decimal(new int[] {
+            this.chaUpDown.Minimum = new decimal(new int[] {
             3,
             0,
             0,
             0});
-            this.numericUpDown7.Name = "numericUpDown7";
-            this.numericUpDown7.Size = new System.Drawing.Size(60, 20);
-            this.numericUpDown7.TabIndex = 3;
-            this.numericUpDown7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.numericUpDown7.Value = new decimal(new int[] {
+            this.chaUpDown.Name = "chaUpDown";
+            this.chaUpDown.Size = new System.Drawing.Size(60, 20);
+            this.chaUpDown.TabIndex = 3;
+            this.chaUpDown.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.chaUpDown.Value = new decimal(new int[] {
             11,
             0,
             0,
             0});
+            this.chaUpDown.ValueChanged += new System.EventHandler(this.chaUpDown_ValueChanged);
             // 
             // minChaLabel
             // 
@@ -292,7 +293,7 @@
             // 
             // panel7
             // 
-            this.panel7.Controls.Add(this.numericUpDown6);
+            this.panel7.Controls.Add(this.powUpDown);
             this.panel7.Controls.Add(this.minPowLabel);
             this.panel7.Controls.Add(this.powLabel);
             this.panel7.Controls.Add(this.maxPowLabel);
@@ -302,30 +303,31 @@
             this.panel7.Size = new System.Drawing.Size(222, 30);
             this.panel7.TabIndex = 6;
             // 
-            // numericUpDown6
+            // powUpDown
             // 
-            this.numericUpDown6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDown6.Location = new System.Drawing.Point(95, 5);
-            this.numericUpDown6.Maximum = new decimal(new int[] {
+            this.powUpDown.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.powUpDown.Location = new System.Drawing.Point(95, 5);
+            this.powUpDown.Maximum = new decimal(new int[] {
             18,
             0,
             0,
             0});
-            this.numericUpDown6.MaximumSize = new System.Drawing.Size(60, 0);
-            this.numericUpDown6.Minimum = new decimal(new int[] {
+            this.powUpDown.MaximumSize = new System.Drawing.Size(60, 0);
+            this.powUpDown.Minimum = new decimal(new int[] {
             3,
             0,
             0,
             0});
-            this.numericUpDown6.Name = "numericUpDown6";
-            this.numericUpDown6.Size = new System.Drawing.Size(60, 20);
-            this.numericUpDown6.TabIndex = 3;
-            this.numericUpDown6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.numericUpDown6.Value = new decimal(new int[] {
+            this.powUpDown.Name = "powUpDown";
+            this.powUpDown.Size = new System.Drawing.Size(60, 20);
+            this.powUpDown.TabIndex = 3;
+            this.powUpDown.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.powUpDown.Value = new decimal(new int[] {
             11,
             0,
             0,
             0});
+            this.powUpDown.ValueChanged += new System.EventHandler(this.powUpDown_ValueChanged);
             // 
             // minPowLabel
             // 
@@ -362,7 +364,7 @@
             // 
             // panel6
             // 
-            this.panel6.Controls.Add(this.numericUpDown5);
+            this.panel6.Controls.Add(this.intUpDown);
             this.panel6.Controls.Add(this.minIntLabel);
             this.panel6.Controls.Add(this.intLabel);
             this.panel6.Controls.Add(this.maxIntLabel);
@@ -373,30 +375,31 @@
             this.panel6.TabIndex = 5;
             this.panel6.Paint += new System.Windows.Forms.PaintEventHandler(this.panel6_Paint);
             // 
-            // numericUpDown5
+            // intUpDown
             // 
-            this.numericUpDown5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDown5.Location = new System.Drawing.Point(95, 5);
-            this.numericUpDown5.Maximum = new decimal(new int[] {
+            this.intUpDown.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.intUpDown.Location = new System.Drawing.Point(95, 5);
+            this.intUpDown.Maximum = new decimal(new int[] {
             18,
             0,
             0,
             0});
-            this.numericUpDown5.MaximumSize = new System.Drawing.Size(60, 0);
-            this.numericUpDown5.Minimum = new decimal(new int[] {
+            this.intUpDown.MaximumSize = new System.Drawing.Size(60, 0);
+            this.intUpDown.Minimum = new decimal(new int[] {
             3,
             0,
             0,
             0});
-            this.numericUpDown5.Name = "numericUpDown5";
-            this.numericUpDown5.Size = new System.Drawing.Size(57, 20);
-            this.numericUpDown5.TabIndex = 3;
-            this.numericUpDown5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.numericUpDown5.Value = new decimal(new int[] {
+            this.intUpDown.Name = "intUpDown";
+            this.intUpDown.Size = new System.Drawing.Size(57, 20);
+            this.intUpDown.TabIndex = 3;
+            this.intUpDown.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.intUpDown.Value = new decimal(new int[] {
             11,
             0,
             0,
             0});
+            this.intUpDown.ValueChanged += new System.EventHandler(this.intUpDown_ValueChanged);
             // 
             // minIntLabel
             // 
@@ -433,7 +436,7 @@
             // 
             // panel5
             // 
-            this.panel5.Controls.Add(this.numericUpDown4);
+            this.panel5.Controls.Add(this.dexUpDown);
             this.panel5.Controls.Add(this.minDexLabel);
             this.panel5.Controls.Add(this.dexLabel);
             this.panel5.Controls.Add(this.maxDexLabel);
@@ -443,30 +446,31 @@
             this.panel5.Size = new System.Drawing.Size(222, 30);
             this.panel5.TabIndex = 4;
             // 
-            // numericUpDown4
+            // dexUpDown
             // 
-            this.numericUpDown4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDown4.Location = new System.Drawing.Point(95, 5);
-            this.numericUpDown4.Maximum = new decimal(new int[] {
+            this.dexUpDown.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dexUpDown.Location = new System.Drawing.Point(95, 5);
+            this.dexUpDown.Maximum = new decimal(new int[] {
             18,
             0,
             0,
             0});
-            this.numericUpDown4.MaximumSize = new System.Drawing.Size(60, 0);
-            this.numericUpDown4.Minimum = new decimal(new int[] {
+            this.dexUpDown.MaximumSize = new System.Drawing.Size(60, 0);
+            this.dexUpDown.Minimum = new decimal(new int[] {
             3,
             0,
             0,
             0});
-            this.numericUpDown4.Name = "numericUpDown4";
-            this.numericUpDown4.Size = new System.Drawing.Size(60, 20);
-            this.numericUpDown4.TabIndex = 3;
-            this.numericUpDown4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.numericUpDown4.Value = new decimal(new int[] {
+            this.dexUpDown.Name = "dexUpDown";
+            this.dexUpDown.Size = new System.Drawing.Size(60, 20);
+            this.dexUpDown.TabIndex = 3;
+            this.dexUpDown.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.dexUpDown.Value = new decimal(new int[] {
             11,
             0,
             0,
             0});
+            this.dexUpDown.ValueChanged += new System.EventHandler(this.dexUpDown_ValueChanged);
             // 
             // minDexLabel
             // 
@@ -503,7 +507,7 @@
             // 
             // panel4
             // 
-            this.panel4.Controls.Add(this.numericUpDown3);
+            this.panel4.Controls.Add(this.sizUpDown);
             this.panel4.Controls.Add(this.minSizLabel);
             this.panel4.Controls.Add(this.sizLabel);
             this.panel4.Controls.Add(this.maxSizLabel);
@@ -513,30 +517,31 @@
             this.panel4.Size = new System.Drawing.Size(222, 30);
             this.panel4.TabIndex = 3;
             // 
-            // numericUpDown3
+            // sizUpDown
             // 
-            this.numericUpDown3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDown3.Location = new System.Drawing.Point(95, 5);
-            this.numericUpDown3.Maximum = new decimal(new int[] {
+            this.sizUpDown.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sizUpDown.Location = new System.Drawing.Point(95, 5);
+            this.sizUpDown.Maximum = new decimal(new int[] {
             18,
             0,
             0,
             0});
-            this.numericUpDown3.MaximumSize = new System.Drawing.Size(60, 0);
-            this.numericUpDown3.Minimum = new decimal(new int[] {
+            this.sizUpDown.MaximumSize = new System.Drawing.Size(60, 0);
+            this.sizUpDown.Minimum = new decimal(new int[] {
             3,
             0,
             0,
             0});
-            this.numericUpDown3.Name = "numericUpDown3";
-            this.numericUpDown3.Size = new System.Drawing.Size(60, 20);
-            this.numericUpDown3.TabIndex = 3;
-            this.numericUpDown3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.numericUpDown3.Value = new decimal(new int[] {
+            this.sizUpDown.Name = "sizUpDown";
+            this.sizUpDown.Size = new System.Drawing.Size(60, 20);
+            this.sizUpDown.TabIndex = 3;
+            this.sizUpDown.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.sizUpDown.Value = new decimal(new int[] {
             11,
             0,
             0,
             0});
+            this.sizUpDown.ValueChanged += new System.EventHandler(this.sizUpDown_ValueChanged);
             // 
             // minSizLabel
             // 
@@ -573,7 +578,7 @@
             // 
             // panel3
             // 
-            this.panel3.Controls.Add(this.numericUpDown1);
+            this.panel3.Controls.Add(this.conUpDown);
             this.panel3.Controls.Add(this.minConLabel);
             this.panel3.Controls.Add(this.conLabel);
             this.panel3.Controls.Add(this.maxConLabel);
@@ -583,30 +588,31 @@
             this.panel3.Size = new System.Drawing.Size(222, 30);
             this.panel3.TabIndex = 2;
             // 
-            // numericUpDown1
+            // conUpDown
             // 
-            this.numericUpDown1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDown1.Location = new System.Drawing.Point(95, 5);
-            this.numericUpDown1.Maximum = new decimal(new int[] {
+            this.conUpDown.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.conUpDown.Location = new System.Drawing.Point(95, 5);
+            this.conUpDown.Maximum = new decimal(new int[] {
             18,
             0,
             0,
             0});
-            this.numericUpDown1.MaximumSize = new System.Drawing.Size(60, 0);
-            this.numericUpDown1.Minimum = new decimal(new int[] {
+            this.conUpDown.MaximumSize = new System.Drawing.Size(60, 0);
+            this.conUpDown.Minimum = new decimal(new int[] {
             3,
             0,
             0,
             0});
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(60, 20);
-            this.numericUpDown1.TabIndex = 3;
-            this.numericUpDown1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.numericUpDown1.Value = new decimal(new int[] {
+            this.conUpDown.Name = "conUpDown";
+            this.conUpDown.Size = new System.Drawing.Size(60, 20);
+            this.conUpDown.TabIndex = 3;
+            this.conUpDown.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.conUpDown.Value = new decimal(new int[] {
             11,
             0,
             0,
             0});
+            this.conUpDown.ValueChanged += new System.EventHandler(this.conUpDown_ValueChanged);
             // 
             // minConLabel
             // 
@@ -643,7 +649,7 @@
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.numericUpDown2);
+            this.panel2.Controls.Add(this.strUpDown);
             this.panel2.Controls.Add(this.minStrLabel);
             this.panel2.Controls.Add(this.strengthLabel);
             this.panel2.Controls.Add(this.maxStrLabel);
@@ -653,31 +659,31 @@
             this.panel2.Size = new System.Drawing.Size(222, 30);
             this.panel2.TabIndex = 1;
             // 
-            // numericUpDown2
+            // strUpDown
             // 
-            this.numericUpDown2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDown2.Location = new System.Drawing.Point(95, 5);
-            this.numericUpDown2.Maximum = new decimal(new int[] {
+            this.strUpDown.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.strUpDown.Location = new System.Drawing.Point(95, 5);
+            this.strUpDown.Maximum = new decimal(new int[] {
             18,
             0,
             0,
             0});
-            this.numericUpDown2.MaximumSize = new System.Drawing.Size(60, 0);
-            this.numericUpDown2.Minimum = new decimal(new int[] {
+            this.strUpDown.MaximumSize = new System.Drawing.Size(60, 0);
+            this.strUpDown.Minimum = new decimal(new int[] {
             3,
             0,
             0,
             0});
-            this.numericUpDown2.Name = "numericUpDown2";
-            this.numericUpDown2.Size = new System.Drawing.Size(57, 20);
-            this.numericUpDown2.TabIndex = 3;
-            this.numericUpDown2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.numericUpDown2.Value = new decimal(new int[] {
+            this.strUpDown.Name = "strUpDown";
+            this.strUpDown.Size = new System.Drawing.Size(57, 20);
+            this.strUpDown.TabIndex = 3;
+            this.strUpDown.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.strUpDown.Value = new decimal(new int[] {
             11,
             0,
             0,
             0});
-            this.numericUpDown2.ValueChanged += new System.EventHandler(this.numericUpDown2_ValueChanged);
+            this.strUpDown.ValueChanged += new System.EventHandler(this.strUpDown_ValueChanged);
             // 
             // minStrLabel
             // 
@@ -857,7 +863,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
+            this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(954, 561);
             this.Controls.Add(this.professionInfoBox);
             this.Controls.Add(this.cultureTypeInfoBox);
@@ -868,6 +874,7 @@
             this.Controls.Add(this.professionBox);
             this.Controls.Add(this.cultureTypeBox);
             this.Controls.Add(this.raceBox);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "BaseMythrasSelectForm";
             this.Text = "Mythras Character Generator";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -877,19 +884,19 @@
             this.statsBox.ResumeLayout(false);
             this.totalPanel.ResumeLayout(false);
             this.panel8.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chaUpDown)).EndInit();
             this.panel7.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.powUpDown)).EndInit();
             this.panel6.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.intUpDown)).EndInit();
             this.panel5.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dexUpDown)).EndInit();
             this.panel4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sizUpDown)).EndInit();
             this.panel3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.conUpDown)).EndInit();
             this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.strUpDown)).EndInit();
             this.statFieldsPanel.ResumeLayout(false);
             this.raceInfoBox.ResumeLayout(false);
             this.cultureTypeInfoBox.ResumeLayout(false);
@@ -920,37 +927,37 @@
         private System.Windows.Forms.Label totalNum;
         private System.Windows.Forms.Label label27;
         private System.Windows.Forms.Panel panel8;
-        private System.Windows.Forms.NumericUpDown numericUpDown7;
+        private System.Windows.Forms.NumericUpDown chaUpDown;
         private System.Windows.Forms.Label minChaLabel;
         private System.Windows.Forms.Label chaLabel;
         private System.Windows.Forms.Label maxChaLabel;
         private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.NumericUpDown numericUpDown6;
+        private System.Windows.Forms.NumericUpDown powUpDown;
         private System.Windows.Forms.Label minPowLabel;
         private System.Windows.Forms.Label powLabel;
         private System.Windows.Forms.Label maxPowLabel;
         private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.NumericUpDown numericUpDown5;
+        private System.Windows.Forms.NumericUpDown intUpDown;
         private System.Windows.Forms.Label minIntLabel;
         private System.Windows.Forms.Label intLabel;
         private System.Windows.Forms.Label maxIntLabel;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.NumericUpDown numericUpDown4;
+        private System.Windows.Forms.NumericUpDown dexUpDown;
         private System.Windows.Forms.Label minDexLabel;
         private System.Windows.Forms.Label dexLabel;
         private System.Windows.Forms.Label maxDexLabel;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.NumericUpDown numericUpDown3;
+        private System.Windows.Forms.NumericUpDown sizUpDown;
         private System.Windows.Forms.Label minSizLabel;
         private System.Windows.Forms.Label sizLabel;
         private System.Windows.Forms.Label maxSizLabel;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.NumericUpDown conUpDown;
         private System.Windows.Forms.Label minConLabel;
         private System.Windows.Forms.Label conLabel;
         private System.Windows.Forms.Label maxConLabel;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.NumericUpDown numericUpDown2;
+        private System.Windows.Forms.NumericUpDown strUpDown;
         private System.Windows.Forms.Label minStrLabel;
         private System.Windows.Forms.Label maxStrLabel;
         private System.Windows.Forms.Label statValueLabel;
