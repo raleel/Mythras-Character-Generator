@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<profession_list>
+  <!-- PROFESSION TEMPLATE
+  <profession>
+    <profession_name></profession_name>
+    <profession_description>
+      
+    </profession_description>
+    <skills>
+      <skill></skill>
+    </skills>
+  </profession>
+  -->
+
+  <profession>
+    <profession_name>Agent</profession_name>
+    <profession_description>
+      The work of an agent is to report upon, and operate covertly against those his employer wishes to keep an eye on. They watch, discover, and act secretively. Anyone might be an agent – servants, beggars, noblemen, even children. Likewise those that employ agents might be anybody from a jilted lover or struggling merchant to the ruler of a nation. Agents mostly deal with passing of information or minor acts of sabotage, although a few sometimes perform assassination if the cause, or payment, is right.
+    </profession_description>
+    <skills>
+      <!-- STANDARD SKILLS -->
+      <skill>Conceal</skill>
+      <skill>Deceit</skill>
+      <skill>Evade</skill>
+      <skill>Insight</skill>
+      <skill>Perception</skill>
+      <skill>Stealth</skill>
+      <skill>Combat Style</skill>
+      <!-- PROFESSIONAL SKILLS -->
+      <skill>Culture</skill>
+      <skill>Disguise</skill>
+      <skill>Language</skill>
+      <skill>Sleight</skill>
+      <skill>Streetwise</skill>
+      <skill>Track</skill>
+    </skills>
+  </profession>
+</profession_list>

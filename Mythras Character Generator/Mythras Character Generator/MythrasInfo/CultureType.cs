@@ -31,17 +31,28 @@ namespace Mythras_Character_Generator.MythrasInfo
         public void addCultureTypeSkill(Skill skill)
         {
             cultureSkills.Add(skill.getSkillName(), skill);
-        }
+        } 
 
         public override string ToString()
         {
             string ToString = cultureTypeName;
 
-            ToString += "\r\n<b>Skills</b>";
+            ToString += "\r\n\r\nSkills";
+            string standardString = "\r\nStandard";
+            string profString = "\r\nProfessional";
             foreach (KeyValuePair<string, Skill> entry in cultureSkills)
             {
-                ToString += "\r\n" + entry.Key;
+                if (entry.Value.isSkillProfessional() == true)
+                {
+                    profString += "\r\n" + entry.Key;
+                } else
+                {
+                    standardString += "\r\n" + entry.Key;
+                }
+                
             }
+            ToString += "\r\n" + standardString;
+            ToString += "\r\n" + profString;
 
             return ToString;
         }

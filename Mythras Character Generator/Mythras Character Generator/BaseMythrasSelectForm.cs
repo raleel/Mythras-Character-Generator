@@ -11,16 +11,17 @@ using Mythras_Character_Generator.MythrasInfo;
 
 namespace Mythras_Character_Generator
 {
-    public partial class MythrasRaceSelectForm : Form
+    public partial class BaseMythrasSelectForm : Form
     {
         SettingInformationStore sis;
         Dictionary<int, string> raceNames;
-        public MythrasRaceSelectForm()
+        public BaseMythrasSelectForm()
         {
             InitializeComponent();
             sis = new SettingInformationStore();
             initialiseRaces();
             initialiseCultures();
+            initialiseProfessions();
         }
 
         public void initialiseRaces()
@@ -56,7 +57,27 @@ namespace Mythras_Character_Generator
                 if (i == 1)
                 {
                     newButton.Checked = true;
-                    cultureTypeInfoText.Text = sis.getCultureInformation(cultureNames[i]);
+                    cultureTypeInfoText.Text = sis.getCultureTypeInformation(cultureNames[i]);
+                }
+            }
+        }
+
+        public void initialiseProfessions()
+        {
+            Dictionary<int, string> professionNames = sis.getAllProfessionNames();
+
+            List<RadioButton> professionButtons = new List<RadioButton>();
+            for (int i = 1; i < professionNames.Count + 1; i++)
+            {
+                RadioButton newButton = new RadioButton();
+                newButton.Text = professionNames[i];
+                newButton.Click += new EventHandler(professionButtonClick);
+                professionButtons.Add(newButton);
+                this.professionLayoutPanel.Controls.Add(newButton);
+                if (i == 1)
+                {
+                    newButton.Checked = true;
+                    professionInfoText.Text = sis.getProfessionInformation(professionNames[i]);
                 }
             }
         }
@@ -69,7 +90,13 @@ namespace Mythras_Character_Generator
         public void cultureButtonClick(object sender, EventArgs e)
         {
             string cultureName = this.cultureTypeLayoutPanel.Controls.OfType<RadioButton>().FirstOrDefault(r => r.Checked).Text;
-            cultureTypeInfoText.Text = sis.getCultureInformation(cultureName);
+            cultureTypeInfoText.Text = sis.getCultureTypeInformation(cultureName);
+        }
+
+        public void professionButtonClick(object sender, EventArgs e)
+        {
+            string professionName = this.professionLayoutPanel.Controls.OfType<RadioButton>().FirstOrDefault(r => r.Checked).Text;
+            professionInfoText.Text = sis.getProfessionInformation(professionName);
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -83,6 +110,11 @@ namespace Mythras_Character_Generator
         }
 
         private void panel6_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void numericUpDown2_ValueChanged(object sender, EventArgs e)
         {
 
         }

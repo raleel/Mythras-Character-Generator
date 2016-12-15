@@ -46,20 +46,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="BaseMythrasSelectForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="BaseMythrasSelectForm.Designer.cs">
+      <DependentUpon>BaseMythrasSelectForm.cs</DependentUpon>
     </Compile>
     <Compile Include="MythrasInfo\CultureType.cs" />
+    <Compile Include="MythrasInfo\Profession.cs" />
     <Compile Include="MythrasInfo\Race.cs" />
     <Compile Include="MythrasInfo\SettingInformationStore.cs" />
     <Compile Include="MythrasInfo\Skill.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="BaseMythrasSelectForm.resx">
+      <DependentUpon>BaseMythrasSelectForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -85,12 +86,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="xmlStore\BaseMythras\Cultures\culturetypes_default.xml" />
+    <Content Include="xmlStore\BaseMythras\Professions\professions_default.xml" />
     <Content Include="xmlStore\BaseMythras\Races\races_default.xml" />
     <Content Include="xmlStore\BaseMythras\Skills\skills_default.xml" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="xmlStore\BaseMythras\Professions\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

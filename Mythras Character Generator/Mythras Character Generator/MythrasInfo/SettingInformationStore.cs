@@ -12,17 +12,82 @@ namespace Mythras_Character_Generator.MythrasInfo
         Dictionary<string, CultureType> cultureTypes;
         Dictionary<string, Skill> skills;
         Dictionary<string, Race> races;
+        Dictionary<string, Profession> professions;
 
         public SettingInformationStore()
         {
             cultureTypes = new Dictionary<string, CultureType>();
             skills = new Dictionary<string, Skill>();
             races = new Dictionary<string, Race>();
+            professions = new Dictionary<string, Profession>();
             addRaces();
             readSkillsFromXML("..\\..\\xmlStore\\BaseMythras\\Skills\\skills_default.xml");
+            readProfessionsFromXML("..\\..\\xmlStore\\BaseMythras\\Professions\\professions_default.xml");
             readCultureTypesFromXML("..\\..\\xmlStore\\BaseMythras\\Cultures\\culturetypes_default.xml");
         }
 
+        /**
+         * Reads culture types from a given XML file.
+         */
+        public void readProfessionsFromXML(string fileName)
+        {
+            // reader creation
+            XmlTextReader reader = new XmlTextReader(fileName);
+
+            // whilst we read the file
+            while (reader.Read())
+            {
+                // 
+                if (reader.NodeType == XmlNodeType.Element)
+                {
+                    if (reader.Name == "profession")
+                    {
+                        string professionName = "";
+                        string professionDescription = "";
+                        Dictionary<string, Skill> professionSkills = new Dictionary<string, Skill>();
+                        while (reader.Read() && reader.Name != "profession")
+                        {
+                            switch (reader.Name)
+                            {
+                                case "profession_name":
+                                    reader.Read();
+                                    professionName = reader.Value;
+                                    while (reader.Read() && reader.NodeType != XmlNodeType.EndElement) ;
+                                    break;
+                                case "profession_description":
+                                    reader.Read();
+                                    professionDescription = reader.Value;
+                                    while (reader.Read() && reader.NodeType != XmlNodeType.EndElement) ;
+                                    break;
+                                case "skill":
+                                    reader.Read();
+                                    try
+                                    {
+                                        professionSkills.Add(skills[reader.Value].getSkillName(), skills[reader.Value]);
+                                    }
+                                    catch (KeyNotFoundException ke)
+                                    {
+                                        Console.WriteLine("No skill of name " + reader.Value + " found whilst parsing profession " + professionName + ".");
+                                    }
+                                    while (reader.Read() && reader.NodeType != XmlNodeType.EndElement) ;
+                                    break;
+
+                            }
+                        }
+                        Profession profession = new Profession(professionName, professionDescription);
+                        foreach (KeyValuePair<string, Skill> entry in professionSkills)
+                        {
+                            profession.addSkill(entry.Value);
+                        }
+                        addProfession(profession);
+                    }
+                }
+            }
+        }
+
+        /**
+         * Reads culture types from a given XML file.
+         */
         public void readCultureTypesFromXML(string fileName)
         {
             // reader creation
@@ -71,6 +136,9 @@ namespace Mythras_Character_Generator.MythrasInfo
             }
         }
 
+        /**
+         * Reads skills from a given xml file.
+         */
         public void readSkillsFromXML(string fileName)
         {
             // reader creation
@@ -105,7 +173,7 @@ namespace Mythras_Character_Generator.MythrasInfo
                                         isProfessional = false;
                                     } else if (reader.Value == "Professional")
                                     {
-                                        isProfessional = false;
+                                        isProfessional = true;
                                     }
                                     while (reader.Read() && reader.NodeType != XmlNodeType.EndElement) ;
                                     break;
@@ -133,26 +201,38 @@ namespace Mythras_Character_Generator.MythrasInfo
             }
         }
 
-        public void addSkills()
+        public void addProfession(Profession profession)
         {
-            
+            professions.Add(profession.getProfessionName(), profession);
         }
 
+        /**
+         * Adds a given skill to the skill list.
+         */
         public void addSkill(Skill skill)
         {
             skills.Add(skill.getSkillName(), skill);
         }
 
+        /**
+         * Adds a given culture type to the culture type list.
+         */
         public void addCultureType(CultureType cultureType)
         {
             cultureTypes.Add(cultureType.getCultureTypeName(), cultureType);
         }
 
-        public string getCultureInformation(string cultureName)
+        /**
+         * Gets culture type information from a given culture name.
+         */
+        public string getCultureTypeInformation(string cultureName)
         {
             return cultureTypes[cultureName].ToString();
         }
 
+        /**
+         * Returns a dictionary of culture names under a numerical system.
+         */
         public Dictionary<int, string> getAllCultureNames()
         {
             Dictionary<int, string> cultureNames = new Dictionary<int, string>();
@@ -165,6 +245,29 @@ namespace Mythras_Character_Generator.MythrasInfo
             return cultureNames;
         }
 
+        /**
+         * Returns a dictionary of culture names under a numerical system.
+         */
+        public Dictionary<int, string> getAllProfessionNames()
+        {
+            Dictionary<int, string> professionNames = new Dictionary<int, string>();
+            int i = 1;
+            foreach (KeyValuePair<string, Profession> entry in professions)
+            {
+                professionNames.Add(i, entry.Key);
+                i++;
+            }
+            return professionNames;
+        }
+
+        public string getProfessionInformation(string professionName)
+        {
+            return professions[professionName].getProfessionDescription();
+        }
+
+        /**
+         * Returns a dictionary of race names under a numerical system.
+         */
         public Dictionary<int, string> getAllRaceNames()
         {
             Dictionary<int, string> raceNames = new Dictionary<int, string>();
@@ -177,6 +280,9 @@ namespace Mythras_Character_Generator.MythrasInfo
             return raceNames;
         }
 
+        /**
+         * Test method for adding races.
+         */
         public void addRaces()
         {
             Race race = new Race();
