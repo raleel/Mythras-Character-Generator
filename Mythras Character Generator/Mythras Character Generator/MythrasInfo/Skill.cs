@@ -35,5 +35,19 @@ namespace Mythras_Character_Generator.MythrasInfo
         {
             return isProfessional;
         }
+
+        public string getStat(int statNumber)
+        {
+            if (statNumber == 1)
+            {
+                return firstStat;
+            } else if (statNumber == 2)
+            {
+                return secondStat;
+            } else
+            {
+                return "FAILURE";
+            }
+        }
     }
 }

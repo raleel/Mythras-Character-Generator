@@ -14,9 +14,7 @@
 
   <profession>
     <profession_name>Agent</profession_name>
-    <profession_description>
-      The work of an agent is to report upon, and operate covertly against those his employer wishes to keep an eye on. They watch, discover, and act secretively. Anyone might be an agent – servants, beggars, noblemen, even children. Likewise those that employ agents might be anybody from a jilted lover or struggling merchant to the ruler of a nation. Agents mostly deal with passing of information or minor acts of sabotage, although a few sometimes perform assassination if the cause, or payment, is right.
-    </profession_description>
+    <profession_description>The work of an agent is to report upon, and operate covertly against those his employer wishes to keep an eye on. They watch, discover, and act secretively. Anyone might be an agent – servants, beggars, noblemen, even children. Likewise those that employ agents might be anybody from a jilted lover or struggling merchant to the ruler of a nation. Agents mostly deal with passing of information or minor acts of sabotage, although a few sometimes perform assassination if the cause, or payment, is right.</profession_description>
     <skills>
       <!-- STANDARD SKILLS -->
       <skill>Conceal</skill>
@@ -36,10 +34,11 @@
       <skill>Track</skill>
     </skills>
   </profession>
+
   <profession>
     <profession_name>Alchemist</profession_name>
     <profession_description>
-      Alchemists concern themselves with creating, or trading in, a wide range of chemical and herbal substances which are used by the local community. These concoctions can vary in purpose – soaps, polishes, dyes, disinfectants, acids, oils, unguents, perfumes, narcot- ics, medicines, poisons – the list is almost endless. The larger the society they reside in, the more likely that the alchemist will special- ise in making or selling one specific type of compound.
+      Alchemists concern themselves with creating, or trading in, a wide range of chemical and herbal substances which are used by the local community. These concoctions can vary in purpose – soaps, polishes, dyes, disinfectants, acids, oils, unguents, perfumes, narcotics, medicines, poisons – the list is almost endless. The larger the society they reside in, the more likely that the alchemist will specialise in making or selling one specific type of compound.
     </profession_description>
     <skills>
       <!-- STANDARD SKILLS -->
@@ -84,6 +83,7 @@
       <skill>Track</skill>
     </skills>
   </profession>
+
   <profession>
     <profession_name>Courtesan</profession_name>
     <profession_description>
@@ -588,4 +588,5 @@
       <skill>Survival</skill>
     </skills>
   </profession>
+
 </profession_list>
